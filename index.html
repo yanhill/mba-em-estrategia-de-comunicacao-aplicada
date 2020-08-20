@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="viewport" content="width=device-width"/>
+        <title>Inovação para Políticas Públicas</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style-part2.css">
+        <link rel="stylesheet" href="style-part3.css">
+        <link rel="stylesheet" href="style-part4.css">
+        <link rel="stylesheet" href="style-infobox.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+
+        <header id="header">
+            <div class="wrap">
+                <a id="logo" href="http://dapp.fgv.br">
+                    <svg width="169.09404166667px" height="17px" viewBox="0 0 238.721 24" xml:space="preserve"><g>
+                        <path style="fill:#FFFFFF;" d="M145.815,0.643h8.883c2.059,0,3.899,0.281,5.51,0.84c1.615,0.559,2.973,1.342,4.08,2.352 c1.106,1.012,1.953,2.211,2.536,3.604c0.58,1.394,0.871,2.921,0.871,4.591v0.064c0,1.664-0.3,3.207-0.891,4.62 c-0.591,1.415-1.446,2.636-2.565,3.671c-1.118,1.031-2.496,1.838-4.13,2.418c-1.634,0.579-3.483,0.871-5.541,0.871h-8.752V0.643z M154.803,18.017c1.917,0,3.459-0.507,4.626-1.515c1.167-1.01,1.75-2.443,1.75-4.311v-0.068c0-1.842-0.583-3.27-1.75-4.289 c-1.167-1.023-2.708-1.53-4.626-1.53h-2.609v11.713H154.803z"></path>
+                        <path style="fill:#FFFFFF;" d="M178.944,0.479h6.152l9.808,23.194h-6.848l-1.673-4.111h-8.885l-1.646,4.111h-6.711L178.944,0.479z M184.537,14.625l-2.569-6.548l-2.597,6.548H184.537z"></path>
+                        <path style="fill:#FFFFFF;" d="M197.136,0.644h9.871c1.446,0,2.764,0.183,3.947,0.542c1.187,0.365,2.193,0.889,3.028,1.578 c0.831,0.692,1.474,1.543,1.921,2.554c0.452,1.005,0.679,2.148,0.679,3.419v0.068c0,1.357-0.247,2.553-0.743,3.583 c-0.491,1.034-1.178,1.898-2.058,2.601c-0.875,0.703-1.921,1.227-3.139,1.578c-1.219,0.352-2.541,0.527-3.964,0.527h-3.159v6.58 h-6.383V0.644z M206.544,12.093c1.142,0,2.038-0.269,2.685-0.813c0.646-0.538,0.967-1.269,0.967-2.196V9.016 c0-0.99-0.32-1.745-0.967-2.264c-0.647-0.521-1.554-0.78-2.712-0.78h-2.997v6.121H206.544z"></path>
+                        <path style="fill:#FFFFFF;" d="M219.275,0.644h9.875c1.446,0,2.76,0.183,3.946,0.542c1.182,0.365,2.193,0.889,3.024,1.578 c0.835,0.692,1.474,1.543,1.925,2.554c0.447,1.005,0.675,2.148,0.675,3.419v0.068c0,1.357-0.247,2.553-0.738,3.583 c-0.496,1.034-1.183,1.898-2.058,2.601c-0.878,0.703-1.921,1.227-3.139,1.578c-1.219,0.352-2.542,0.527-3.967,0.527h-3.156v6.58 h-6.388V0.644z M228.687,12.093c1.142,0,2.037-0.269,2.681-0.813c0.646-0.538,0.971-1.269,0.971-2.196V9.016 c0-0.99-0.324-1.745-0.971-2.264c-0.644-0.521-1.55-0.78-2.712-0.78h-2.992v6.121H228.687z"></path>
+                        <polygon style="fill:#FFFFFF;" points="64.604,0.463 83.064,0.463 83.064,6.068 71,6.068 71,9.955 81.909,9.955 81.909,15.295 71,15.295 71,23.537 64.604,23.537 	"></polygon>
+                        <path style="fill:#FFFFFF;" d="M97.732,24c-1.801,0-3.467-0.291-4.994-0.874c-1.53-0.583-2.851-1.402-3.971-2.457 c-1.122-1.054-2.002-2.313-2.64-3.774c-0.635-1.459-0.955-3.068-0.955-4.826V12c0-1.67,0.315-3.234,0.936-4.697 c0.622-1.462,1.481-2.737,2.576-3.823c1.091-1.087,2.401-1.942,3.928-2.557C94.133,0.311,95.787,0,97.569,0 c2.046,0,3.807,0.295,5.289,0.891c1.486,0.596,2.841,1.418,4.07,2.474l-3.755,4.518c-0.834-0.708-1.69-1.243-2.557-1.618 c-0.867-0.371-1.873-0.559-3.016-0.559c-0.834,0-1.61,0.162-2.324,0.49c-0.711,0.332-1.335,0.783-1.862,1.354 c-0.528,0.572-0.942,1.244-1.255,2.014c-0.307,0.768-0.458,1.591-0.458,2.475V12.1c0,0.924,0.155,1.778,0.463,2.569 c0.308,0.794,0.743,1.47,1.307,2.028c0.563,0.561,1.222,0.999,1.984,1.319c0.76,0.319,1.602,0.479,2.529,0.479 c1.501,0,2.736-0.319,3.704-0.959v-2.801h-4.552v-4.682h10.619v10.387c-1.234,1.012-2.681,1.856-4.354,2.536 C101.732,23.661,99.842,24,97.732,24"></path>
+                        <polygon style="fill:#FFFFFF;" points="109.469,0.463 116.62,0.463 121.861,15.064 127.105,0.463 134.126,0.463 124.741,23.537 118.81,23.537 	"></polygon>
+                        <polygon style="fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;" points="32.937,7.973 40.882,0.527 58.796,0.527 43.64,14.617 "></polygon>
+                        <polygon style="fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;" points="0,0.527 18.428,0.527 38.482,23.565 20.054,23.565 "></polygon>
+                    </g></svg>
+                </a>
+
+                <div class="right">
+                     <a class="abresuperform" onclick="abresuperform('#nlsf', this)">
+                        <svg width="22.231041666667px" height="17px" viewBox="0 0 31.385 24" xml:space="preserve">
+                            <path fill="#fff" d="M28.615,0H2.77C1.243,0,0,1.242,0,2.77V21.23C0,22.758,1.243,24,2.77,24h25.846 c1.527,0,2.77-1.242,2.77-2.77V2.77C31.385,1.242,30.143,0,28.615,0z M22.478,11.968l7.062-7.062v14.121L22.478,11.968z M2.77,1.846 h25.846c0.423,0,0.765,0.293,0.875,0.682L18.349,13.668c-1.464,1.464-3.848,1.464-5.313,0L1.895,2.527 C2.004,2.139,2.347,1.846,2.77,1.846z M8.907,11.968l-7.061,7.06V4.906L8.907,11.968z M28.615,22.154H2.77 c-0.442,0-0.795-0.32-0.886-0.736l8.237-8.236l1.7,1.7c1.034,1.034,2.409,1.604,3.871,1.604c1.462,0,2.836-0.569,3.871-1.604 l1.702-1.7l8.235,8.236C29.411,21.833,29.057,22.154,28.615,22.154z"></path>
+                        </svg>
+                    </a>
+                    
+                    <a class="abresuperform busca" onclick="abresuperform('#bsf', this)">
+                        <svg width="19px" height="19px" viewBox="0 0 24 24" xml:space="preserve">
+                            <path fill="#fff" d="M24,22.928l-6.748-6.748c1.471-1.716,2.365-3.939,2.365-6.371C19.617,4.4,15.217,0,9.809,0 C4.401,0,0,4.4,0,9.809s4.401,9.809,9.809,9.809c2.432,0,4.655-0.895,6.371-2.365L22.927,24L24,22.928z M9.809,18.207 c-4.63,0-8.397-3.768-8.397-8.398s3.767-8.397,8.397-8.397c4.631,0,8.397,3.767,8.397,8.397S14.439,18.207,9.809,18.207z"></path>
+                        </svg>
+                    </a>
+    
+                    <div class="social">
+                        <a href="https://www.facebook.com/FGV.DAPP" target="_blank"><svg width="9.5px" height="19px" viewBox="0 0 12 24" xml:space="preserve"><path style="fill:#fff;" d="M7.999,7.999v-2.38c0-1.076,0.238-1.618,1.908-1.618H12V0H8.8 c-4,0-5.6,2.668-5.6,5.6v2.399H0V12h3.2v12h4.799V12h3.526L12,7.999H7.999z"></path></svg></a>
+                        <a href="https://twitter.com/fgvdapp" target="_blank"><svg width="23.75px" height="19px" viewBox="0 0 30 24" xml:space="preserve"><path style="fill:#fff;" d="M29.494,2.844c-1.088,0.481-2.25,0.806-3.476,0.956 c1.25-0.75,2.213-1.937,2.663-3.35c-1.169,0.694-2.463,1.2-3.844,1.469C23.731,0.738,22.156,0,20.419,0 c-3.345,0-6.05,2.713-6.05,6.056c0,0.476,0.05,0.938,0.155,1.382C9.494,7.188,5.032,4.775,2.05,1.105 C1.532,2,1.232,3.044,1.232,4.15c0,2.1,1.075,3.956,2.7,5.044c-1-0.025-1.938-0.3-2.75-0.756v0.075 c0,2.937,2.087,5.381,4.856,5.937c-0.506,0.139-1.044,0.214-1.594,0.214c-0.387,0-0.769-0.038-1.137-0.113 c0.768,2.407,3.006,4.157,5.656,4.207c-2.069,1.625-4.681,2.593-7.519,2.593c-0.487,0-0.969-0.031-1.444-0.087 C2.668,23,5.85,24,9.263,24c11.144,0,17.231-9.231,17.231-17.237c0-0.263-0.007-0.525-0.02-0.782 C27.656,5.125,28.682,4.063,29.494,2.844"></path></svg></a>
+                        <a href="https://www.linkedin.com/company/fgv-dapp" target="_blank"><svg width="19px" height="19px" viewBox="0 0 24 24" xml:space="preserve"><path style="fill:#fff;" d="M22.225,0H1.771C0.793,0,0,0.774,0,1.73v20.538 C0,23.224,0.793,24,1.771,24h20.454c0.978,0,1.774-0.776,1.774-1.731V1.73C23.999,0.774,23.202,0,22.225,0 M7.385,20.309H3.692 V9.23h3.692V20.309z M5.539,7.754c-1.227,0-2.216-0.992-2.216-2.215c0-1.224,0.99-2.217,2.216-2.217 c1.223,0,2.214,0.993,2.214,2.217C7.753,6.762,6.762,7.754,5.539,7.754 M20.309,20.309h-3.693V14.77c0-1.5-0.403-2.925-1.846-2.925 s-1.846,1.447-1.846,2.94v5.523H9.23V9.23h3.693v1.332h0.185c0.474-0.899,1.661-1.666,3.073-1.666c3.404,0,4.127,2.238,4.127,4.949 V20.309z"></path></svg></a>
+                        <!--<a href="https://www.instagram.com/fgvdapp/" target="_blank"><svg width="19px" height="19px" viewBox="0 0 24 24" xml:space="preserve" ><path style="fill:#fff;" d="M22.225,0H1.771C0.793,0,0,0.774,0,1.73v20.538 C0,23.224,0.793,24,1.771,24h20.454c0.978,0,1.774-0.776,1.774-1.731V1.73C23.999,0.774,23.202,0,22.225,0 M7.385,20.309H3.692 V9.23h3.692V20.309z M5.539,7.754c-1.227,0-2.216-0.992-2.216-2.215c0-1.224,0.99-2.217,2.216-2.217 c1.223,0,2.214,0.993,2.214,2.217C7.753,6.762,6.762,7.754,5.539,7.754 M20.309,20.309h-3.693V14.77c0-1.5-0.403-2.925-1.846-2.925 s-1.846,1.447-1.846,2.94v5.523H9.23V9.23h3.693v1.332h0.185c0.474-0.899,1.661-1.666,3.073-1.666c3.404,0,4.127,2.238,4.127,4.949 V20.309z"/></svg></a>-->
+                    </div>
+
+                    <!--
+                    <div class="select">
+                        <svg width="12.25px" height="7px" viewBox="0 0 42 24" xml:space="preserve">
+                            <polyline points="3,3 21,21 39,3" style="fill: none; stroke:#fff; stroke-width:4px;"></polyline>
+                        </svg>	
+                        
+                        <div class="option ativo" href="http://dapp.fgv.br/">
+                            <span style="width:48px;">
+                                <svg width="22.5px" height="15px" viewBox="0 0 36 24" xml:space="preserve">
+                                    <rect style="fill:#009B3A;" width="36" height="24"></rect> 
+                                    <polygon style="fill:#FEDF00;" points="17.994,2.46 3.054,12 17.994,21.54 32.935,12 "></polygon> 
+                                    <path style="fill:#002776;" d="M17.994,5.7c3.479,0,6.3,2.82,6.3,6.3s-2.821,6.3-6.3,6.3c-3.479,0-6.3-2.82-6.3-6.3 S14.515,5.7,17.994,5.7"></path> 
+                                    <path style="fill:#FFFFFF;" d="M12.207,9.511c-0.135,0.314-0.241,0.644-0.324,0.982c4.886-0.982,9.378,0.929,12.167,3.225 c0.092-0.321,0.159-0.651,0.198-0.991C21.374,10.506,16.996,8.725,12.207,9.511"></path> 
+                                    <rect style="fill:none;" width="36" height="24"></rect>
+                                </svg>PT
+                            </span>
+                        </div>
+                        
+                        <div class="option " href="http://dapp.fgv.br/en/">
+                            <span style="width:48px;">
+                                <svg width="22.5px" height="15px" viewBox="0 0 36 24" xml:space="preserve">
+                                    <rect style="fill:#FFFFFF;" width="36" height="24"></rect>
+                                    <polygon style="fill:#DC002E;" points="15.639,0 15.639,9.733 0.027,9.733 0.027,14.726 15.639,14.763 15.639,24 20.402,24 20.42,14.694 35.986,14.672 35.986,9.747 20.385,9.751 20.385,0 "></polygon> <polygon style="fill:#DC002E;" points="11.858,16.347 1.021,24 3.985,24 13.99,16.995 13.99,16.347 "></polygon> 
+                                    <polygon style="fill:#004489;" points="0,16.392 0,21.695 7.654,16.392 "></polygon> 
+                                    <polygon style="fill:#004489;" points="0,8.041 7.675,8.041 0,2.714 "></polygon> 
+                                    <polygon style="fill:#DC002E;" points="0.027,0 0.027,1.805 9.084,8.041 11.982,8.041 0.426,0 "></polygon> 
+                                    <polygon style="fill:#004489;" points="4.742,0 13.991,6.378 13.991,0 "></polygon> 
+                                    <polygon style="fill:#004489;" points="22.004,0 22.004,6.4 31.204,0 "></polygon> 
+                                    <polygon style="fill:#DC002E;" points="32.581,0 21.982,7.393 21.982,8.019 24.116,8.019 35.585,0 "></polygon> 
+                                    <polygon style="fill:#004489;" points="28.339,8.04 36,8.04 36,2.71 "></polygon> 
+                                    <polygon style="fill:#004489;" points="35.979,21.7 35.979,16.392 28.298,16.349 "></polygon> 
+                                    <polygon style="fill:#DC002E;" points="24.095,16.392 34.953,24 35.979,24 35.979,22.671 26.907,16.392 "></polygon> 
+                                    <polygon style="fill:#004489;" points="22.004,24 30.625,24 22.004,17.945 "></polygon> 
+                                    <polygon style="fill:#004489;" points="5.397,24 13.991,24 13.991,18.009 "></polygon>
+                                </svg>EN
+                            </span>
+                        </div>
+                    </div>
+                -->
+                </div>
+            </div>
+
+            <div class="top-menuferramentas">
+                <div class="wrap">
+                    <ul class="top-menuferramentas-list">
+                        <li><a href="http://observademocraciadigital.org">SALA DE DEMOCRACIA DIGITAL - AMÉRICA LATINA</a></li>
+                        <li><a href="https://observa2018.com.br/">#OBSERVA2018</a></li>
+                        <li><a href="http://dapp.fgv.br/cursos-fgv-dapp/">CURSOS</a></li>
+                        <li><a href="http://dapp.fgv.br/datablog">DATABLOG</a></li>
+                        <li><a href="http://dapp.fgv.br/contato">CONTATO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="primary-cover" id="primaryCover">
+            <div class="header-content">
+
+                <p class='novo-curso'>NOVO CURSO</p>
+                <img src="img/enfeite.svg" alt="">  
+                <h1 class="cover-title">MBA em Estratégias de Comunicação Aplicada</h1>
+                <p class='subtitle'>Domine as redes sociais para gestão da comunicação digital</p>
+            </div>
+<!-- 
+            <div class="fullscreen-video-wrap">
+                <div class="wrapaqui">
+                    <img id="videoCover" src="img/capa-limpo-4.png" alt="">
+                </div>  
+            </div> -->
+        </div>
+
+
+<div class="information-box-container">
+    
+        <div class="information-box">
+            <div class="novo-curso-box">
+                <img src="img/dapp-logo.svg" alt="" class="dapp-logo">
+            </div>
+            <div class="info-title">MBA em Estratégias de Comunicação Aplicada</div>
+
+            <div class="info-container">
+                <div class="modalidade-container">     
+                    <div class="modalidade icon-container"><img src="img/modalidade.svg" alt="" class="modalidade-icon"></div> 
+                    <div class="modalidade">Modalidade de aula</div>
+                    <div class="modalidade"><img src="img/LIVE.svg" alt=""></div>
+                </div>
+
+                <div class="modalidade-container">
+                    <div class="inicio icon-container"><img src="img/inicio.svg" alt="" class="inicio"></div>
+                    <div class="inicio">Inicio</div>
+                    <div class="inicio">28/10/2020</div>
+                </div>
+
+                <div class="modalidade-container">
+                    <div class="matriculas icon-container"></div>
+                    <div class="matriculas">Matriculas até</div>
+                    <div class="matriculas">21/10/2020</div>
+                </div>
+
+                <div class="modalidade-container">
+                    <div class="carga-horaria icon-container"><img src="img/duracao.svg" alt="" class="carga-icon"></div>
+                    <div class="carga-horaria">Carga horaria</div>
+                    <div class="carga-horaria">432 horas/aulas</span></div>
+                </div>
+
+                <div class="modalidade-container">
+                    <div class="duracao icon-container"></div>
+                    <div class="duracao">Duração</div>
+                    <div class="duracao">15 meses</div>
+                </div>
+                
+            </div>
+            <a class="inscreva-se" href="https://siteseguroonline.fgv.br/inscricao/21912?os=82293&agv=FGVONLINE00">QUERO ME INSCREVER</a>
+        </div>
+    </div>
+
+        <div class="part2-container">
+            <div class="about-web-real">
+                <h1 class="title-about-web">As redes sociais estão levando o mercado de comunicação à maior transformação da sua história.</h1>
+                <p class="text-about-web">Conhecimentos e metodologias de sucesso se tornaram obsoletos em poucos anos e tanto  as companhias quanto os profissionais precisam revisar os seus posicionamentos, desenvolver novas habilidades e se preparar para esse mercado em constante mudança.</p>
+            </div>
+            <p class="about-web"></p>
+        </div>
+
+        <div class="all-3">
+        <div class="part3-container">
+            <h1>Ao decorrer do curso você irá adquirir</h1>
+            <div class="carousel">
+                
+                <div class="habilities"><p>Conteúdo sobre a evolução do consumo de informação dos brasileiros e os desafios da indústria de comunicação tradicional.</p></div>
+                <div class="habilities"><p>Conhecimento sobre as melhores práticas de monitoramento das redes sociais e de uso do big data aplicadas à gestão da comunicação em ambientes digitais.</div>
+                <div class="habilities"><p>Capacidade de análises de riscos de reputação e prevenção de crises.</p></div>
+                <div class="habilities"><p>Ampla visão sobre as estratégias de comunicação de companhias públicas e privadas, brasileiras e estrangeiras.</p></div>
+                <div class="habilities"><p>Expertise para gerir a comunicação digital integrada com o posicionamento institucional de companhias e personalidades.</p></div>
+                <div class="habilities"><p>Competência para avaliação de mercado de empreendedorismo digital.</p></div>
+            </div>
+        </div>
+    </div>
+
+        <div class="part4-container">
+            <h1>Programa</h1>
+
+            <div class="carousel">
+                
+                <div class="programa programa1">
+                    <div id="containerPrograma1" class="sub-container container-programa1">
+                        <p class="numero">1 de 18</p>
+                        <div id='titlePlus1' class="title-plus">
+                            <h2>Antropologia do Consumo</h2>
+                            <img src="img/arrow.svg" alt="" class="arrow">
+                        </div> 
+                        <p class="about-programa">Mito, ritual e ideologia. Etnocentrismo. Cultura como sistema de significação. Meios, mediações e comunicação de massa. Consumo, publicidade e Antropologia na contemporaneidade. Pensamento antropológico no pós-guerra.</p>                
+                    </div>
+                </div>
+                
+                <div class="programa programa2">
+                    <div class="sub-container container-programa2">
+                        <p class="numero">2 de 18</p>
+                        <div id='titlePlus2' class="title-plus">
+                            <img src="img/arrow.svg" alt="" class="arrow">
+                            <h2>Análise de dados</h2>    
+                        </div>
+                        <p class="about-programa">Revisão de probabilidade. Estatística básica. Estatística descritiva.  Estimadores e modelo estatístico. Testes de hipótese. Estimação de intervalos. Análise de variância. Fundamentos do modelo de regressão linear. Método dos mínimos quadrados e hipóteses sobre o modelo linear.</p>
+                    </div>
+                </div>
+                
+                <div class="programa programa3">
+                    <div class="sub-container container-programa3">
+                        <p class="numero">3 de 18</p>
+                        <div id='titlePlus3' class="title-plus">
+                            <h2>Business Intelligence</h2>
+                            <img src="img/arrow.svg" alt="" class="arrow">
+                        </div>
+                        <p class="about-programa">Integração dos processos empresariais aos modelos de monitoramento e acompanhamento. Elaboração e implantação de indicadores e painéis de controle. Ferramentas de business intelligence e big data. Integração dos níveis tático e operacional à estratégia empresarial. Planejamento estratégico e metodologias de gestão estratégica.</p>
+                    </div>
+                </div>
+
+                <div class="programa programa4">
+                    <div class="sub-container container-programa4">
+                        <p class="numero">4 de 18</p>
+                        <div id='titlePlus4' class="title-plus">
+                            <img src="img/arrow.svg" alt="" class="arrow">
+                            <h2>Comunicação Digital: Teoria e Prática</h2>
+                        </div>
+                        <p class="about-programa">Comunicação de massa na sociedade em rede. Cibercultura, convergência para ambientes digitais, abordagens de comunicação política e institucional na internet. Práticas virtuais de comunicação, cultura e linguagem.</p>
+                    </div>
+                </div>
+                
+                <div class="programa programa5">
+                    <div class="sub-container container-programa5">
+                        <p class="numero">5 de 18</p>
+                        <div id='titlePlus5' class="title-plus">
+                            <h2>Ciência de dados</h2>
+                            <img src="img/arrow.svg" alt="" class="arrow">
+                        </div>
+                        <p class="about-programa">Conceitos relativos a dados. Revisão de probabilidade. Dados experimentais e observacionais. Pré-processamento de dados. Classificação de dados a partir de algoritmos de árvores de decisão. Algoritmos baseados em instâncias. Clusterização por partição hierárquica. Softwares e ferramentas de MD.</p>
+                    </div>
+                </div>
+               
+                <div class="programa programa6">
+                    <div class="sub-container container-programa6">
+                        <p class="numero">6 de 18</p>
+                        <div id='titlePlus6' class="title-plus">
+                            <img src="img/arrow.svg" alt="" class="arrow">
+                            <h2>Casos de estratégia digital</h2>
+                        </div>
+                        <p class="about-programa">Comunicação aplicada a organizações complexas. Agenda setting e desenho de pesquisa com bases públicas. Estratégias digitais de think tanks. Pesquisa aplicada. Comunicação aplicada a startups. Novas organizações de mídia. Produção de conteúdo audiovisual.</p>
+                    </div>
+                </div>
+              
+                <div class="programa programa7">
+                    <div class="sub-container container-programa7">
+                        <p class="numero">7 de 18</p>
+                        <div id='titlePlus7' class="title-plus">
+                            <h2>Comunicação Institucional</h2>
+                            <img src="img/arrow.svg" alt="" class="arrow">
+                        </div>
+                        <p class="about-programa">Comunicação nas organizações. Política de comunicação integrada em organizações públicas e privadas. Técnicas de comunicação interna e dirigida nas mídias impressa e eletrônica. Instrumentos de assessoria de comunicação. Gestão estratégica da informação.</p>
+                    </div>
+                </div>
+               
+                <div class="programa programa8">
+                    <div class="sub-container container-programa8">
+                        <p class="numero">8 de 18</p>
+                        <div id='titlePlus8' class="title-plus">
+                            <img src="img/arrow.svg" alt="" class="arrow">
+                            <h2>Design e Visualização de Dados</h2>
+                        </div>
+                        <p class="about-programa">Dados, sociedade e DataViz: coleta, limpeza e análise de dados. Literacia visual, design de informação, e taxonomia de gráficos e DataViz. UX, storytelling e dashboards.</p>
+                    </div>
+                </div>
+                
+                <div class="programa programa9">
+                    <div class="sub-container container-programa9">
+                        <p class="numero">9 de 18</p>
+                        <div id='titlePlus9' class="title-plus">
+                            <h2>Empreendorismo Digital</h2>
+                            <img src="img/arrow.svg" alt="" class="arrow">
+                        </div>
+                        <p class="about-programa">Marketing digital. Gestão de pessoas. Empreendedorismo e inovação. Modelos de negócio digitais contemporâneos. Consumo no ambiente digital. Empreendedorismo digital e planejamento de negócios. Elaboração de projetos.</p>
+                    </div>
+                </div>
+                
+                <div class="programa programa10">
+                    <div class="sub-container container-programa10">
+                        <p class="numero">10 de 18</p>
+                        <div id='titlePlus10' class="title-plus">
+                            <img src="img/arrow.svg" alt="" class="arrow">
+                            <h2>Economia e Indústria criativa</h2>
+                        </div>
+                        <p class="about-programa">Indústria criativa: definição e conceitos. Modelos de negócio e indústria criativa. Economia colaborativa. Políticas públicas e indústria cultural.</p>
+                    </div>
+                </div>
+               
+                <div class="programa programa11">
+                    <div class="sub-container container-programa11">
+                        <p class="numero">11 de 18</p>
+                        <div id='titlePlus11' class="title-plus">
+                            <h2>Economia Política das Plataformas Digitais</h2>
+                            <img src="img/arrow.svg" alt="" class="arrow">
+                        </div>
+                        <p class="about-programa">Evolução da globalização. Negócios, produção e investimento na economia global. Governando o sistema global: digitalização e democracia. Mudanças globais de poder: da lógica tradicional à manufatura para serviços. Contestando a globalização. Conflito e instabilidade: primaveras, guerras híbridas e revoluções coloridas. Respondendo a forças disruptivas: autorregulação versus regulação. Respostas corporativas para um ambiente global em mudança.</p>
+                    </div>
+                </div>
+              
+                <div class="programa programa12">
+                    <div class="sub-container container-programa12">
+                        <p class="numero">12 de 18</p>
+                        <div id='titlePlus12' class="title-plus">
+                            <img src="img/arrow.svg" alt="" class="arrow">
+                            <h2>Internet e Práticas de Consumo</h2>
+                        </div>
+                        <p class="about-programa">Globalização, internet e consumo. Web 2.0 e emergência das mídias digitais. Plataformas de colaboração. Pirataria e modificações estruturais. Tendências em publicidade, trabalho e negócios digitais. Big data. Novos modelos de negócio. Reestruturações publicitárias e relações de trabalho. Comunicação centrada no usuário. Gigantes tecnológicas e cenário econômico global.</p>
+                    </div>
+                </div>
+               
+                <div class="programa programa13">
+                    <div class="sub-container container-programa13">
+                        <p class="numero">13 de 18</p>
+                        <div id='titlePlus13' class="title-plus">
+                            <h2>Metodologias de Pesquisa em Comunicação</h2>
+                            <img src="img/arrow.svg" alt="" class="arrow">
+                        </div>
+                        <p class="about-programa">Indução e dedução. Objetivismo e subjetivismo. Etnografia. Análise de conteúdo. Entrevistas. Grupos focais. Pesquisa bibliográfica. Observação participante e pesquisa-ação. Análise audiovisual.</p>
+                    </div>
+                </div>
+               
+                <div class="programa programa14">
+                    <div class="sub-container container-programa14">
+                        <p class="numero">14 de 18</p>
+                        <div id='titlePlus14' class="title-plus">
+                            <img src="img/arrow.svg" alt="" class="arrow">
+                            <h2>Pesquisa e Análise em Redes Sociais</h2>
+                        </div>
+                        <p class="about-programa">Conceito de rede social. Laços fortes e laços fracos. Comunidades e interação virtual. Individualismo, cooperação e redes sociais. Principais modelos de análise de redes sociais. Algoritmos, plataformas e aplicativos.</p>
+                    </div>
+                </div>
+               
+                <div class="programa programa15">
+                    <div class="sub-container container-programa15">
+                        <p class="numero">15 de 18</p>
+                        <div id='titlePlus15' class="title-plus">
+                            <h2>Sociologia da Comunicação</h2>
+                            <img src="img/arrow.svg" alt="" class="arrow">
+                        </div>
+                        <p class="about-programa">Comunicação como fundamento da sociabilidade. Público, massas e elites. Comunicação de massa. Comunicação e ideologia. Construção social da realidade. Teorias da formação da opinião pública. Sociedade em rede. Mediatização.</p>
+                    </div>
+                </div>
+               
+                <div class="programa programa16">
+                    <div class="sub-container container-programa16">
+                        <p class="numero">16 de 18</p>
+                        <div id='titlePlus16' class="title-plus">
+                            <img src="img/arrow.svg" alt="" class="arrow">
+                            <h2>Storytelling</h2>
+                        </div>
+                        <p class="about-programa">Narrativas, historiografia e produção da história. Mitos, lendas, referências culturais e folclore. Papel simbólico de arquétipos e construções estabelecidas. Universalidade da narrativa, atores e papéis fundamentais dos gêneros narrativos. Sujeitos, engajamentos, motivações e objetos. Estruturas narrativas: conceitos, abordagens teóricas e articulação prática. Técnicas de storytelling e roteiro. Concepção de peças publicitárias e de comunicação institucional. Sistemas de valor social e identidade narrativa.</p>
+                    </div>
+                </div>
+             
+                <div class="programa programa17">
+                    <div class="sub-container container-programa17">
+                        <p class="numero">17 de 18</p>
+                        <div id='titlePlus17' class="title-plus">
+                            <h2>Tópicos Avançados em Redes Sociais </h2>
+                            <img src="img/arrow.svg" alt="" class="arrow">
+                        </div>
+                        <p class="about-programa">Estruturas de organização e comunicação em redes sociais. Interlocução entre práticas culturais, pontos de vista e relações de poder para a produção, disseminação e recepção de informações no ambiente digital. Desinformação e ameaças à democracia: regulação, identificação e proteção. Fundamentos de linguística aplicada para a pesquisa em redes sociais e análise de big data. Procedimentos e métodos de pesquisa em plataformas digitais.</p>
+                    </div>
+                </div>
+               
+                <div class="programa programa18">
+                    <div class="sub-container container-programa18">
+                        <p class="numero">18 de 18</p>
+                        <div id='titlePlus18' class="title-plus">
+                            <img src="img/arrow.svg" alt="" class="arrow">
+                            <h2>Tópicos em Economia para Comunicação </h2>
+                        </div>
+                        <p class="about-programa">Conceitos básicos de Economia. Noções de Microeconomia. Economia aplicável ao mercado de mídia. Métodos econométricos e de inferência causal. Economia da internet. Mercado da mídia. Accountability. Papel do jornalista. Economia política. Papel da mídia.</p>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+    </body>
+    <script src="behavior.js"></script>
+    <script src="behavior4.js"></script>
+</html>

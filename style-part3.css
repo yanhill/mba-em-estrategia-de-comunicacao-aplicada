@@ -1,0 +1,126 @@
+.part3-container {
+    font-weight: 300;
+    width: 50vw;
+    margin: 0 10vw;
+    margin-bottom: 50px;
+    padding: 80px 0;
+    display:flex;
+}
+
+.part3-container .carousel{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    text-align: left;
+    gap: 40px 10px;
+}
+
+.habilities p{
+    margin:0;
+    font-size: 1em;
+}
+
+.habilities:after{
+    content: "";
+    position: absolute;
+    width: .4rem;
+    height: .4rem;
+    border-radius: 2px;
+    background-color: #314486;
+    transform: rotate(45deg) translate(-175%,75%);
+    background-color: white;
+    border: 1px solid white;
+}
+
+.carousel .habilities {
+    padding: 10px;
+    margin:0;
+    display: flex;
+    color: white;
+    min-height: 150px;
+    justify-content: flex-start;
+    border-left: 1px solid white;
+    padding-top: 0;
+    letter-spacing: 0.05em;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.part3-container h1{
+    padding-bottom: 50px;
+    margin: 0;
+    margin-right:30px;
+    min-width:230px;
+    font-family: 'gotham-medium';
+    color: white;
+    text-align: right;
+    font-size: 2em;
+}
+
+.all-3 {
+    background: #314486;
+    z-index: -2;
+position: relative;
+}
+
+@media only screen and (max-width: 1200px) {
+    .part3-container{
+        width:auto;
+        display:block;
+    }
+
+    .part3-container h1 {
+        margin-right:0;
+        color: white;
+        text-transform: uppercase;
+        text-align: left;
+    }
+
+    .carousel .habilities{
+        color: white;
+        border-left: 1px solid white;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .part3-container{
+        display:block;
+        padding: 40px 0;
+        width: auto;
+        margin: 0 0vw;
+    }
+
+    .part3-container .carousel{
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        padding-left: 10vw;
+    }
+
+    .carousel .habilities {
+        min-height: 200px;
+        min-width: 250px;
+    }
+
+    .habilities::after{
+        display: none;
+    }
+
+    .part3-container > div:nth-child(2) {
+        overflow-y: auto;
+    }
+
+    .part3-container h1 {
+        margin-right:0px;
+        font-size: 1.8em;
+        margin-left: 10vw;
+        overflow-y: auto;
+        text-align: left;
+    }
+
+    div.habilities:nth-child(6) {
+        padding-right: 40px;
+    }
+
+
+}

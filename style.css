@@ -1,0 +1,324 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'gotham-bold';
+    src: url('font/gotham/GothamBold.ttf');
+}
+@font-face {
+    font-family: 'gotham-book';
+    src: url('font/gotham/GothamBook.ttf');
+}
+@font-face {
+    font-family: 'gotham-medium';
+    src: url('font/gotham/GothamMedium_0.ttf');
+}
+
+body{
+    font-family: 'Source Sans Pro',sans-serif;
+    background:white;
+    margin:0;
+    font-size:1em;
+    overflow-x:hidden;
+
+}
+
+#header{
+    background: #4b3ff5;
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+}
+
+.wrap {
+    width: 100%;
+    max-width: 1640px;
+    margin: 0 auto;
+    position: relative;
+    padding: 15px 0;
+    padding-bottom: 5px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.right {
+    float: right;
+    display:flex;
+}
+
+.right > *{
+}
+
+.social > *{
+    padding-left:20px
+}
+
+.title-about-web{
+}
+
+.select {
+    display: inline-block;
+    vertical-align: middle;
+    height: 27px;
+    position: relative;
+    cursor: pointer;
+}
+.select > svg {
+    position: absolute;
+    right: 4px;
+    top: 10px;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+header#header .right .social {
+    float: left;
+    
+}
+
+
+.select .option.ativo {
+    display: block;
+    font-weight: 700;
+}
+.select .option {
+    display: none;
+    padding: 4px 15px 7px 7px;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 1;
+    background: #1e417b;
+    color: #fff;
+}
+
+.top-menuferramentas .wrap {
+    padding: 10px 0;
+    position: relative;
+}
+
+.top-menuferramentas .wrap .top-menuferramentas-list {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    overflow: hidden;
+    padding-right: 32px;
+}
+ul, li {
+    list-style: none;
+    padding: 0;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.top-menuferramentas {
+    display: none;
+    }
+
+.top-menuferramentas .wrap .top-menuferramentas-list li {
+    display: inline-block;
+    color: white;
+}
+
+.top-menuferramentas .wrap .top-menuferramentas-list li a {
+    font-weight: 400;
+    letter-spacing: normal;
+    font-weight: 700;
+    display: block;
+    line-height: 15px;
+    color: White;
+    text-decoration: none;
+    padding:0 15px;
+    padding-left: 0;
+    border-right:1px solid white;
+}
+
+.primary-cover{
+    color:white;
+    height:100vh;
+    align-items:center;
+    color:#fff;
+    background-image: url('img/capa-limpo-4.png');
+    background-position-x: right;
+    font-size: 1.5vw;
+    border-top: 20px;
+    z-index: 2;
+    position: relative;
+}
+
+.fullscreen-video-wrap{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    overflow:hidden;
+    display: flex;
+    justify-content: flex-end;
+
+    height: 100vh;
+}
+
+.fullscreen-video-wrap video{
+    min-width:100%;
+    min-height:100%;   
+    width:100%;
+}
+
+.header-overlay{
+    height: 727.883px; /* VAI SER ALTERADO COM JAVASCRIPT */
+    width: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background: #180bb9;
+    opacity: 0.85;
+    height: 567;
+    
+}
+
+.resto{
+    color:black;
+}
+
+#primaryCover{
+    background-size: cover;
+}
+
+.header-content{
+    z-index: 1;
+    margin-left:10vw;
+    top: 15vh;
+    text-align: left;
+    position: relative;
+}
+
+.primary-options{
+    display:flex;
+    margin-top: 100px;
+}
+
+.primary-options li{
+    margin-right: 40px;
+}
+
+.header-content a{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-weight: 400;
+    letter-spacing: normal;
+    font-weight: 700;
+    display: block;
+    line-height: 15px;
+    color: White;
+    text-decoration: none;
+}
+
+.cover-title {
+    font-size: 2.5vw;
+    width: 60%;
+    line-height: 1em;
+    font-family: 'gotham-bold';
+    margin-bottom: 20px; 
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform:uppercase;
+    line-height: 1.1em;
+}
+
+.novo-curso {
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.5vw;
+    font-family: 'gotham-book';
+    margin-bottom: 50px;
+    }
+
+.subtitle{
+    line-height: 1em;
+    font-weight: 300;
+    color: #314486;
+    padding: 2px 5px;
+    width: 40%;
+    background: #fff;
+    font-size: 1.5vw;
+    padding: 2px;
+    margin: 0;
+    font-family: 'gotham-book';
+    margin-top: 10px;
+}
+a.abresuperform:nth-child(2) {
+    display: none;
+}
+
+a.abresuperform:nth-child(1) {
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .cover-title {
+        font-size: 2.4em;
+        width: 70%;
+    }
+    .header-content {
+        width: 100%;
+        top: 9vh;
+    }
+    .subtitle{
+        font-size: 2.5vw;
+        width: 52%;
+    }
+    .novo-curso{
+        font-size: 2.5vw;
+        letter-spacing: 0.05em;
+    }
+    #primaryCover {
+        background-image: url('img/capa-limpo.png');
+        background-position: right;
+        background-position-y: center;
+        background-size: unset;
+    }
+    .primary-cover{
+        z-index: 0;
+    }
+}
+
+  @media only screen and (max-width: 570px) {
+    .cover-title {
+        font-size:3.5em;
+        width: auto;
+    }
+    .header-content {
+        width: 100%;
+        top:10vh;
+    }
+    .subtitle{
+        font-size: 4vw;
+        width:75%;
+    }
+    .novo-curso{
+        font-size: 3.5vw;
+        letter-spacing: 0.05em;
+        margin-bottom: 30px;
+    }
+
+    #primaryCover {
+        background-position: right;
+        background-position-y: center;
+        background-size: 350%;
+       }
+       
+
+  }
+
+  .header-content > img:nth-child(2) {
+    width: 6vw;
+   }
+
+   .social svg{
+   }
+
+   #logo svg{
+   }
+   
