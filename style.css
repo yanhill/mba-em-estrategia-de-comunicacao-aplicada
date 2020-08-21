@@ -19,13 +19,18 @@
     src: url('font/gotham/Gotham-Black.otf');
 }
 
+html{
+    overflow-x: hidden;
+    -webkit-overflow-x:hidden;
+}
+
 body{
     font-family: 'Source Sans Pro',sans-serif;
     background:white;
     margin:0;
     font-size:1em;
     overflow-x:hidden;
-
+    -webkit-overflow-x:hidden;
 }
 
 #header{
