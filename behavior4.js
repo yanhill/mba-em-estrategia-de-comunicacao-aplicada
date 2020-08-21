@@ -22,6 +22,9 @@ window.addEventListener('resize',function hum(){
     for(let i = 0 ; i < programas.length ; i++){
         programas[i].style.height = subContainers[i].clientHeight+'px';
     }
+
+    translateContents();
+    change2thBoxes();
 });    
 
 function change2thBoxes(){

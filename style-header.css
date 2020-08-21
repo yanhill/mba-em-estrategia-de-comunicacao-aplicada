@@ -1,0 +1,138 @@
+.header-content{
+    z-index: 1;
+    margin-left:10vw;
+    margin-right: 10vw;
+    top: 10vh;
+    text-align: left;
+    position: relative;
+}
+.header-content a{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-weight: 400;
+    letter-spacing: normal;
+    font-weight: 700;
+    display: block;
+    line-height: 15px;
+    color: White;
+    text-decoration: none;
+}
+
+.novo-curso-container{
+    display:flex;
+    align-self: center;
+    justify-content: center;
+}    
+
+.agora-a-fgv{
+    font-size: 1.5vw;
+    letter-spacing: 0.05em;
+    font-family: 'gotham-book';
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+.fgv-live{
+    height:40px;
+    margin-left:10px
+}
+
+.novo-curso {
+    margin: 0;
+    font-size: 1.5vw;
+    font-family: 'gotham-book';
+    align-self: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .header-content {
+        top: 9vh;
+    }
+    .cover-title {
+        font-size: 5.2vw;
+        width: 70%;
+    }
+    .subtitle{
+        font-size: 3vw;
+    width: 60%;
+    }
+    .fgv-live{
+        height: 25px;
+    }
+    .agora-a-fgv{
+        font-size: 2.5vw;
+        margin-bottom: 60px;
+    }
+    .ornamento{
+        width: 10vw;
+    }
+    .novo-curso{
+        font-size: 2.5vw;
+        letter-spacing: 0.05em;
+    }
+    .novo-curso-container{
+        justify-content: center;
+        margin-bottom:0px;
+    }
+    #primaryCover {
+        background-image: url('img/capa-limpo.png');
+        background-position: right;
+        background-position-y: center;
+        background-size: unset;
+    }
+    .primary-cover{
+        z-index: 0;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+
+    .header-content {
+        top:10vh;
+        width: 90%;
+        margin: auto;
+    }
+    .fgv-live{
+        height: 2.5vh;
+    }
+    .cover-title {
+        letter-spacing: 0.01em;
+        font-size: 4em;
+        line-height: .9em;
+    }
+    .agora-a-fgv{
+        letter-spacing: 0.05em;
+        font-family:'gotham-book';
+        font-size: 4vw;
+        text-align: center;
+        margin:0 30px;
+        margin-bottom: 30px;
+    }
+    .ornamento{
+        width:20vw;
+    }
+    .header-content > img:nth-child(2) {
+        width: 6vw;
+    }
+    .cover-title {
+        font-size:6em;
+        width: auto;
+    }
+    .subtitle{
+        font-size: 5.7vw;
+        width: 100%;
+        margin-top: 5px;
+    }
+    .novo-curso{
+        font-size: 3vw;
+        letter-spacing: 0.05em;
+        text-align: center;
+        margin-bottom:0;
+    }
+    .novo-curso-container{
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    #primaryCover {
+        background-size: cover;
+       }
+  }

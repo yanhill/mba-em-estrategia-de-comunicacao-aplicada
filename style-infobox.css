@@ -10,16 +10,9 @@
     z-index: 0;
     padding: 10px 0;
 }
-.modalidade{
-}
-.inicio{
-}
+
 .carva-horaria{
     grid-area: carga;
-}
-.matriculas{
-}
-.duracao{
 }
 .info-container{
     margin-bottom: 30px;
@@ -79,9 +72,6 @@
     font-size: 1.35em;
     color: #008FD0;
     font-family: 'Montserrat', sans-serif;
-}
-
-.info-container span{
 }
 
 .novo-curso-box{

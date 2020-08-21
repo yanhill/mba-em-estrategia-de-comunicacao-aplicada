@@ -14,6 +14,10 @@
     font-family: 'gotham-medium';
     src: url('font/gotham/GothamMedium_0.ttf');
 }
+@font-face {
+    font-family: 'gotham-black';
+    src: url('font/gotham/Gotham-Black.otf');
+}
 
 body{
     font-family: 'Source Sans Pro',sans-serif;
@@ -33,11 +37,8 @@ body{
 
 .wrap {
     width: 100%;
-    max-width: 1640px;
-    margin: 0 auto;
     position: relative;
     padding: 15px 0;
-    padding-bottom: 5px;
     padding-left: 10vw;
     padding-right: 10vw;
 }
@@ -187,13 +188,7 @@ ul, li {
     background-size: cover;
 }
 
-.header-content{
-    z-index: 1;
-    margin-left:10vw;
-    top: 15vh;
-    text-align: left;
-    position: relative;
-}
+
 
 .primary-options{
     display:flex;
@@ -204,20 +199,9 @@ ul, li {
     margin-right: 40px;
 }
 
-.header-content a{
-    font-family: 'Source Sans Pro',sans-serif;
-    font-weight: 400;
-    letter-spacing: normal;
-    font-weight: 700;
-    display: block;
-    line-height: 15px;
-    color: White;
-    text-decoration: none;
-}
-
 .cover-title {
-    font-size: 2.5vw;
-    width: 60%;
+    font-size: 3vw;
+    width: 65%;
     line-height: 1em;
     font-family: 'gotham-bold';
     margin-bottom: 20px; 
@@ -226,15 +210,9 @@ ul, li {
     text-transform:uppercase;
     line-height: 1.1em;
 }
-
-.novo-curso {
-    margin: 0;
-    font-weight: 300;
-    font-size: 1.5vw;
-    font-family: 'gotham-book';
-    margin-bottom: 50px;
-    }
-
+.black{
+    font-family: 'gotham-black';
+}
 .subtitle{
     line-height: 1em;
     font-weight: 300;
@@ -257,68 +235,9 @@ a.abresuperform:nth-child(1) {
 }
 
 @media only screen and (max-width: 1200px) {
-    .cover-title {
-        font-size: 2.4em;
-        width: 70%;
-    }
-    .header-content {
-        width: 100%;
-        top: 9vh;
-    }
-    .subtitle{
-        font-size: 2.5vw;
-        width: 52%;
-    }
-    .novo-curso{
-        font-size: 2.5vw;
-        letter-spacing: 0.05em;
-    }
-    #primaryCover {
-        background-image: url('img/capa-limpo.png');
-        background-position: right;
-        background-position-y: center;
-        background-size: unset;
-    }
-    .primary-cover{
-        z-index: 0;
-    }
+
 }
 
   @media only screen and (max-width: 570px) {
-    .cover-title {
-        font-size:3.5em;
-        width: auto;
-    }
-    .header-content {
-        width: 100%;
-        top:10vh;
-    }
-    .subtitle{
-        font-size: 4vw;
-        width:75%;
-    }
-    .novo-curso{
-        font-size: 3.5vw;
-        letter-spacing: 0.05em;
-        margin-bottom: 30px;
-    }
-
-    #primaryCover {
-        background-position: right;
-        background-position-y: center;
-        background-size: 350%;
-       }
-       
 
   }
-
-  .header-content > img:nth-child(2) {
-    width: 6vw;
-   }
-
-   .social svg{
-   }
-
-   #logo svg{
-   }
-   
