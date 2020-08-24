@@ -17,8 +17,8 @@ window.addEventListener('resize',function(){
 
 function changeOverlayHeight(){
     videoCover = document.getElementById('videoCover');
-    videoHeight = videoCover.offsetHeight;
+   // videoHeight = videoCover.offsetHeight;
 
-    headerOverlay.style.height = videoHeight+'px';
+   // headerOverlay.style.height = videoHeight+'px';
     primaryCover.style.height = videoHeight+'px';
 }
