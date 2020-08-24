@@ -74,11 +74,27 @@
         margin-bottom:0px;
     }
     #primaryCover {
-        background-image: url('img/capa-limpo.png');
+        /* background-video: url('img/capa-limpo.mp4'); */
         background-position: right;
         background-position-y: center;
         background-size: unset;
     }
+
+    .bg-video {
+        display: flex;
+        justify-content: flex-end;
+        }
+        
+    .bg-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1; /*apenas um -1 é necessário quando se trabalha com relative + absolute, sendo pai e filho*/
+        width: 100%;
+        height: 100%;
+        overflow: hidden; /* evita do video passar a altura desejada do .wrap */
+    }
+
     .primary-cover{
         z-index: 0;
     }
@@ -96,8 +112,8 @@
     }
     .cover-title {
         letter-spacing: 0.01em;
-        font-size: 4em;
-        line-height: 1em;
+        font-size: 5.5em;
+        line-height: 1.1em;
     }
     .agora-a-fgv{
         letter-spacing: 0.05em;
