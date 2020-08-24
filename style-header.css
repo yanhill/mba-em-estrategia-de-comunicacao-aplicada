@@ -114,13 +114,10 @@
         margin-top: 10px
     }
     .agora-a-fgv{
-        letter-spacing: 0.05em;
-        font-family:'gotham-book';
         font-size: 3.5vw;
         margin-bottom: 30px;
-        margin: 0 70px;
-        padding: 5px 0;
-        min-height: 100px;
+        margin: 0 10vw;
+        display: block;
     }
     .ornamento{
         width:15vw;
