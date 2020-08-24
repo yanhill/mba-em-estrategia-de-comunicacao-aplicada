@@ -1,0 +1,266 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'gotham-bold';
+    src: url('font/gotham/GothamBold.ttf');
+}
+@font-face {
+    font-family: 'gotham-book';
+    src: url('font/gotham/GothamBook.ttf');
+}
+@font-face {
+    font-family: 'gotham-medium';
+    src: url('font/gotham/GothamMedium_0.ttf');
+}
+@font-face {
+    font-family: 'gotham-black';
+    src: url('font/gotham/Gotham-Black.otf');
+}
+
+html{
+    overflow-x: hidden;
+    -webkit-overflow-x:hidden;
+}
+
+body{
+    font-family: 'Source Sans Pro',sans-serif;
+    background:white;
+    margin:0;
+    font-size:1em;
+    overflow-x:hidden;
+    -webkit-overflow-x:hidden;
+}
+
+#header{
+    background: #4b3ff5;
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+}
+
+.wrap {
+    width: 100%;
+    position: relative;
+    padding: 15px 0;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.right {
+    float: right;
+    display:flex;
+}
+
+.social{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between; 
+    align-items: center;
+}
+
+.select {
+    display: inline-block;
+    vertical-align: middle;
+    height: 27px;
+    position: relative;
+    cursor: pointer;
+}
+.select > svg {
+    position: absolute;
+    right: 4px;
+    top: 10px;
+}
+
+.social a{
+    -webkit-padding: 0 10px;
+    padding: 0 10px;
+
+}
+
+.social svg{
+    width: 5vw;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+#logo svg{
+    width: 30vw;
+}
+
+header#header .right .social {
+    float: left;
+}
+
+.select .option.ativo {
+    display: block;
+    font-weight: 700;
+}
+.select .option {
+    display: none;
+    padding: 4px 15px 7px 7px;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 1;
+    background: #1e417b;
+    color: #fff;
+}
+
+.top-menuferramentas .wrap {
+    padding: 10px 0;
+    position: relative;
+}
+
+.top-menuferramentas .wrap .top-menuferramentas-list {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    overflow: hidden;
+    padding-right: 32px;
+}
+ul, li {
+    list-style: none;
+    padding: 0;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.top-menuferramentas {
+    display: none;
+    }
+
+.top-menuferramentas .wrap .top-menuferramentas-list li {
+    display: inline-block;
+    color: white;
+}
+
+.top-menuferramentas .wrap .top-menuferramentas-list li a {
+    font-weight: 400;
+    letter-spacing: normal;
+    font-weight: 700;
+    display: block;
+    line-height: 15px;
+    color: White;
+    text-decoration: none;
+    padding:0 15px;
+    padding-left: 0;
+    border-right:1px solid white;
+}
+
+.primary-cover{
+    color:white;
+    height:100vh;
+    align-items:center;
+    color:#fff;
+    background-image: url('img/capa-limpo-4.png');
+    background-position-x: right;
+    font-size: 1.5vw;
+    border-top: 20px;
+    z-index: 2;
+    position: relative;
+}
+
+.fullscreen-video-wrap{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    overflow:hidden;
+    display: flex;
+    justify-content: flex-end;
+
+    height: 100vh;
+}
+
+.fullscreen-video-wrap video{
+    min-width:100%;
+    min-height:100%;   
+    width:100%;
+}
+
+.header-overlay{
+    height: 727.883px; /* VAI SER ALTERADO COM JAVASCRIPT */
+    width: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background: #180bb9;
+    opacity: 0.85;
+    height: 567;
+    
+}
+
+.resto{
+    color:black;
+}
+
+#primaryCover{
+    background-size: cover;
+}
+
+
+
+.primary-options{
+    display:flex;
+    margin-top: 100px;
+}
+
+.primary-options li{
+    margin-right: 40px;
+}
+
+.cover-title {
+    font-size: 3vw;
+    width: 65%;
+    line-height: 1em;
+    font-family: 'gotham-bold';
+    margin-bottom: 20px; 
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform:uppercase;
+    line-height: 1.1em;
+}
+.black{
+    font-family: 'gotham-black';
+}
+.subtitle{
+    line-height: 1em;
+    font-weight: 300;
+    color: #314486;
+    padding: 2px 5px;
+    width: 40%;
+    background: #fff;
+    font-size: 1.5vw;
+    padding: 2px;
+    margin: 0;
+    font-family: 'gotham-book';
+    margin-top: 10px;
+}
+a.abresuperform:nth-child(2) {
+    display: none;
+}
+
+a.abresuperform:nth-child(1) {
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+  @media only screen and (max-width: 570px) {
+
+    .wrap{
+        padding-left: 5vw;
+        padding-right: 5vw;
+  }
+}
