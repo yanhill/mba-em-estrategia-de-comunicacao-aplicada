@@ -85,6 +85,8 @@
 
     .agora-container{
         margin: 0 10vw;
+        position: absolute;
+        top: 10vh;
     }
 
     #primaryCover {
@@ -115,7 +117,7 @@
     }
     .agora-a-fgv{
         font-size: 3.5vw;
-        color: #000;
+        margin: 0;
     }
     .ornamento{
         width:15vw;
