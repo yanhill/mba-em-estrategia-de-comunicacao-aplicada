@@ -53,20 +53,16 @@ body{
     display:flex;
 }
 
-.right > *{
-}
-
-.social > *{
-}
-
 .social{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    -webkit-justify-content: space-between; 
     align-items: center;
-}
-
-.title-about-web{
 }
 
 .select {
@@ -82,8 +78,14 @@ body{
     top: 10px;
 }
 
+.social a{
+    -webkit-padding: 0 10px;
+    padding: 0 10px;
+
+}
+
 .social svg{
-    width: 5vw
+    width: 5vw;
 }
 
 svg:not(:root) {
@@ -96,9 +98,7 @@ svg:not(:root) {
 
 header#header .right .social {
     float: left;
-    
 }
-
 
 .select .option.ativo {
     display: block;
@@ -259,4 +259,7 @@ a.abresuperform:nth-child(1) {
 
   @media only screen and (max-width: 570px) {
 
+    .wrap{
+        padding-left: 5vw;
+        padding-right: 5vw;
   }
