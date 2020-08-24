@@ -68,7 +68,6 @@
         letter-spacing: 0.05em;
     }
     .novo-curso-container{
-        justify-content: center;
         margin-bottom:0px;
     }
     #primaryCover {
@@ -106,7 +105,7 @@
     .header-content {
     }
     .fgv-live{
-        height: 2.5vh;
+        height: 2.75vh;
     }
     .cover-title {
         letter-spacing: -0.02em;
@@ -118,9 +117,9 @@
         letter-spacing: 0.05em;
         font-family:'gotham-book';
         font-size: 3.5vw;
-        text-align: center;
-        margin:0 40px;
         margin-bottom: 30px;
+        margin: 0 70px;
+        padding: 5px 0;
     }
     .ornamento{
         width:15vw;
@@ -136,10 +135,9 @@
     .subtitle{
         font-size: 5.7vw;
         width: 100%;
-        margin-top: 5px;
+        margin-top: 30px;
     }
     .novo-curso{
-        font-family: 'gotham-book';
         font-size: 3vw;
         letter-spacing: 0.05em;
         text-align: center;
@@ -147,7 +145,11 @@
         color:white;
     }
     .novo-curso-container{
-        margin-bottom: 10px;
+        margin-bottom: 5px;
+    }
+
+    .novo-curso-container-2{
+        margin-bottom:30px;
     }
 
   }
