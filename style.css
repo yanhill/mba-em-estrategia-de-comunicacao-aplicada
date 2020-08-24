@@ -57,7 +57,13 @@ body{
 }
 
 .social > *{
-    padding-left:20px
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
 }
 
 .title-about-web{
@@ -76,8 +82,16 @@ body{
     top: 10px;
 }
 
+.social svg{
+    width: 5vw
+}
+
 svg:not(:root) {
     overflow: hidden;
+}
+
+#logo svg{
+    width: 30vw;
 }
 
 header#header .right .social {
