@@ -109,9 +109,10 @@
         height: 2.5vh;
     }
     .cover-title {
-        letter-spacing: 0.01em;
+        letter-spacing: -0.02em;
         font-size: 4em;
-        line-height: 1em;
+        line-height: 1.1em;
+        margin-top: 10px
     }
     .agora-a-fgv{
         letter-spacing: 0.05em;
@@ -124,7 +125,6 @@
     .ornamento{
         width:15vw;
         position: relative;
-        margin-bottom:1vh;
     }
     .header-content > img:nth-child(2) {
         width: 6vw;
