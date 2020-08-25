@@ -17,6 +17,9 @@
 }
 
 .novo-curso-container{
+    position: absolute;
+top: 10vh;
+width: 100vw;
     display:flex;
     justify-content: center;
 }    
@@ -74,10 +77,19 @@
 
 @media only screen and (max-width: 570px) {
 
+    .head-content{
+        position: absolute;
+top: 25vh;
+    }
+
     #primaryCover {
         background-image: url('img/capa-limpo-5.png');
     }
 
+    .header-content{
+        position: absolute;
+top: 25vh;
+    }
     .agora-container{
         display: flex;
         justify-content: center;
@@ -101,7 +113,7 @@
        }
 
     .fgv-live{
-        width: 66vw;
+        height: 18vw;
     }
     .cover-title {
         letter-spacing: -0.02em;
