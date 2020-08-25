@@ -29,7 +29,7 @@
     text-align: center;
 }
 .fgv-live{
-    margin-left:10px
+
 }
 
 .novo-curso {
@@ -84,6 +84,12 @@
     .agora-container{
         margin: 0 10vw;
         top: 10vh;
+        display: flex;
+justify-content: center;
+    }
+
+    .fgv-ensina{
+        width: 60vw;
     }
 
     #primaryCover {
@@ -102,6 +108,7 @@
     .header-content {
     }
     .fgv-live{
+        width: 50vw;
     }
     .cover-title {
         letter-spacing: -0.02em;
