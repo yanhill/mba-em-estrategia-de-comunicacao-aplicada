@@ -91,7 +91,7 @@
         background-size: cover;
        }
     .tudinho {
-        top: 10vh;
+        top: 70px;
         position: absolute;
        }
 
@@ -100,8 +100,6 @@
         height: 100%;
        }
 
-    .header-content {
-    }
     .fgv-live{
         width: 66vw;
     }
