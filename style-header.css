@@ -82,10 +82,9 @@
     }
 
     .agora-container{
-        margin: 0 10vw;
-        top: 10vh;
         display: flex;
-justify-content: center;
+        justify-content: center;
+        margin-top: 2vh;
     }
 
     .fgv-ensina{
@@ -144,7 +143,6 @@ justify-content: center;
         color:white;
     }
     .novo-curso-container{
-        margin-bottom: 1vw;
     }
 
     .novo-curso-container-2{
