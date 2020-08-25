@@ -29,7 +29,6 @@
     text-align: center;
 }
 .fgv-live{
-    height:40px;
     margin-left:10px
 }
 
@@ -52,7 +51,6 @@
     width: 60%;
     }
     .fgv-live{
-        height: 25px;
     }
     .agora-a-fgv{
     }
@@ -95,18 +93,15 @@
         top: 10vh;
         position: absolute;
        }
-       
 
     .background-color {
         background: #00000047;
         height: 100%;
        }
-       
 
     .header-content {
     }
     .fgv-live{
-        height: 2.75vh;
     }
     .cover-title {
         letter-spacing: -0.02em;
@@ -142,7 +137,7 @@
         color:white;
     }
     .novo-curso-container{
-        margin-bottom: 5px;
+        margin-bottom: 15px;
     }
 
     .novo-curso-container-2{
