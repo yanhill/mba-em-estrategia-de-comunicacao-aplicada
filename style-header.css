@@ -1,5 +1,5 @@
 .header-content{
-    margin-left:10vw;
+    margin-left: 5vw;
     position: absolute;
     top: 30vh;
 }
@@ -154,7 +154,7 @@
     }
     .header-content{
         position: absolute;
-        top: 25vh;
+        top: 20vh;
     }
     .agora-container{
         display: flex;
@@ -171,14 +171,15 @@
         position: absolute;
     }
     .fgv-live{
-        height: 9vh;
+        height: 16vw;
         width: auto;
     }
     .cover-title {
         letter-spacing: -0.02em;
-        font-size: 4em;
         line-height: 1.1em;
-        margin-top: 10px
+        margin-top: 10px;
+        font-size: 5.7em;
+        width: 90%;
     }
     .agora-a-fgv{
         font-size: 3.5vw;
@@ -191,10 +192,7 @@
     .header-content > img:nth-child(2) {
         width: 6vw;
     }
-    .cover-title {
-        font-size:5.4em;
-        width: 90%;
-    }
+
     .subtitle{
         font-size: 5.7vw;
         width: 100%;
