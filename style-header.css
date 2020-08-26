@@ -171,8 +171,8 @@
         position: absolute;
     }
     .fgv-live{
-        width: 60vw;
-        height: auto;
+        height: 9vh;
+        width: auto;
     }
     .cover-title {
         letter-spacing: -0.02em;
