@@ -96,6 +96,8 @@ position: relative;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: 1fr;
         padding-left: 10vw;
+        overflow-y: auto;
+        overflow-x: auto;
     }
 
     .carousel .habilities {
