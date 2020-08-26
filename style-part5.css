@@ -20,13 +20,14 @@ figure {
     font-size: 1.4em;
     padding-top: 20px;
     padding:10px;
-    font-family: 'gotham';
+    font-family: 'gotham-medium';
 }
 
 .about{
     font-size: 0.7em;
 font-family: 'Source Sans Pro',sans-serif;
 font-weight: 300;
+padding-right: 5vw;
 }
 .part5-container {
     width: 55vw;
