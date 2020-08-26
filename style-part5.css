@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'gotham-medium';
+    src: url('font/gotham/GothamMedium_0.ttf');
+}
+
 .part5-container h1 {
     text-align: center;
     font-size: 3em;
@@ -93,6 +98,7 @@ margin-bottom: none;
     }
     .nome{
         margin-bottom: 10px;
+        font-family: 'gotham-medium';
     }
     .part5-container h1 {
         margin-left:10vw;
