@@ -18,9 +18,9 @@ figure {
     color: #183063;
     text-align: left;
     font-size: 1.4em;
-    font-family: 'gotham';
     padding-top: 20px;
     padding:10px;
+    font-family: 'gotham';
 }
 
 .about{
@@ -98,7 +98,6 @@ margin-bottom: none;
     }
     .nome{
         margin-bottom: 10px;
-        font-family: 'gotham-medium';
     }
     .part5-container h1 {
         margin-left:10vw;
