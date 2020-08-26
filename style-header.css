@@ -1,9 +1,45 @@
 .header-content{
-    z-index: 1;
     margin-left:10vw;
-    margin-right: 10vw;
-    text-align: left;
+    position: absolute;
+    top: 30vh;
+}
+.primary-cover{
+    color:white;
+    height:100vh;
+    align-items:center;
+    color:#fff;
+    background-image: url('img/capa-limpo-4.png');
+    background-position-x: right;
+    font-size: 1.5vw;
+    border-top: 20px;
+    z-index: 2;
     position: relative;
+}
+.fgv-live{
+    width: 20vw;
+    height: auto;
+}
+
+
+.fullscreen-video-wrap{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    overflow:hidden;
+    display: flex;
+    justify-content: flex-end;
+
+    height: 100vh;
+}
+.fullscreen-video-wrap video{
+    min-width:100%;
+    min-height:100%;   
+    width:100%;
+}
+.background-color {
+    background: #00000047;
+    height: 100%;
 }
 .header-content a{
     font-family: 'Source Sans Pro',sans-serif;
@@ -18,11 +54,31 @@
 
 .novo-curso-container{
     position: absolute;
-top: 10vh;
-width: 100vw;
+    top: 8vh;
+    width: 100vw;
     display:flex;
     justify-content: center;
-}    
+}
+.black{
+    font-family: 'gotham-black';
+}
+.cover-title {
+    line-height: 1em;
+    font-family: 'gotham-bold';
+    margin-top: 0;
+    text-transform:uppercase;
+    line-height: 1.1em;
+    font-size: 4vw;
+    width: 60%;
+}
+
+#primaryCover {
+    background-image: url('img/capa-limpo-7.png');
+    background-position: right;
+    background-position-y: center;
+    background-size: unset;
+    background-size: cover;
+}
 
 .agora-a-fgv{
     font-size: 1.5vw;
@@ -30,10 +86,6 @@ width: 100vw;
     font-family: 'gotham-book';
     text-align: center;
 }
-.fgv-live{
-
-}
-
 .novo-curso {
     margin: 0;
     font-size: 1.5vw;
@@ -42,19 +94,25 @@ width: 100vw;
 }
 
 @media only screen and (max-width: 1200px) {
-    .header-content {
-    }
     .cover-title {
-        font-size: 5.2vw;
-        width: 70%;
+        font-size: 6vw;
+        width: 80%;
+    }
+    .header-content {
+        position: absolute;
+        top: 25vh;
     }
     .subtitle{
         font-size: 3vw;
-    width: 60%;
+        width: 60%;
     }
     .fgv-live{
+        width: 30vw;
+        height: auto;
     }
-    .agora-a-fgv{
+    .background-color {
+        background: #00000047;
+        height: 100%;
     }
     .ornamento{
         width: 10vw;
@@ -63,9 +121,8 @@ width: 100vw;
         font-size: 2.5vw;
         letter-spacing: 0.05em;
     }
-
     #primaryCover {
-        background-image: url('img/capa-limpo.png');
+        background-image: url('img/capa-limpo-6.png');
         background-position: right;
         background-position-y: center;
         background-size: unset;
@@ -75,45 +132,47 @@ width: 100vw;
     }
 }
 
+@media only screen and (max-width: 900px) {
+    .cover-title{
+        font-size: 7vw;
+    }
+    .fgv-live{
+        width: 35vw;
+        height: auto;
+    }
+}
+
 @media only screen and (max-width: 570px) {
 
     .head-content{
         position: absolute;
-top: 25vh;
+        top: 25vh;
     }
-
+    
     #primaryCover {
-        background-image: url('img/capa-limpo-5.png');
+        background-image: url('img/capa-limpo-6.png');
     }
-
     .header-content{
         position: absolute;
-top: 25vh;
+        top: 25vh;
     }
     .agora-container{
         display: flex;
         justify-content: center;
     }
-
     .fgv-ensina{
         width: 60vw;
     }
-
     #primaryCover {
         background-size: cover;
        }
     .tudinho {
         top: 5px;
         position: absolute;
-       }
-
-    .background-color {
-        background: #00000047;
-        height: 100%;
-       }
-
+    }
     .fgv-live{
-        height: 18vw;
+        width: 60vw;
+        height: auto;
     }
     .cover-title {
         letter-spacing: -0.02em;
@@ -133,8 +192,8 @@ top: 25vh;
         width: 6vw;
     }
     .cover-title {
-        font-size:5em;
-        width: auto;
+        font-size:5.4em;
+        width: 90%;
     }
     .subtitle{
         font-size: 5.7vw;
@@ -150,9 +209,8 @@ top: 25vh;
     }
     .novo-curso-container{
         top: 10vh;
-position: absolute;
-display: flex;
-width: 100%;
+        position: absolute;
+        display: flex;
+        width: 100%;
     }
-
   }
