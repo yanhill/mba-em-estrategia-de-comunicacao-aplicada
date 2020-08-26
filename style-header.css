@@ -154,7 +154,7 @@
     }
     .header-content{
         position: absolute;
-        top: 22vh;
+        top: 25vh;
     }
     .agora-container{
         display: flex;
@@ -206,7 +206,7 @@
         color:white;
     }
     .novo-curso-container{
-        top: 10vh;
+        top: 12vh;
         position: absolute;
         display: flex;
         width: 100%;
