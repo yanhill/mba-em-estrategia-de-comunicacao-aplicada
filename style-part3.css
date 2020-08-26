@@ -60,7 +60,7 @@
 }
 
 .all-3 {
-    background: #314486;
+    background: #183063;
     z-index: -2;
 position: relative;
 }
@@ -88,7 +88,7 @@ position: relative;
     .part3-container{
         display:block;
         padding: 40px 0;
-        width: auto;
+        width: 100vw;
         margin: 0 0vw;
     }
 
@@ -96,8 +96,8 @@ position: relative;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: 1fr;
         padding-left: 10vw;
-        overflow-y: auto;
-        overflow-x: auto;
+        overflow-x: scroll;
+overflow: -moz-scrollbars-horizontal;
     }
 
     .carousel .habilities {
@@ -107,10 +107,6 @@ position: relative;
 
     .habilities::after{
         display: none;
-    }
-
-    .part3-container > div:nth-child(2) {
-        overflow-y: auto;
     }
 
     .part3-container h1 {

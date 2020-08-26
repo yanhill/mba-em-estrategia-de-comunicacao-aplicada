@@ -7,8 +7,8 @@
 .part4-container h1{
     text-align: center;
     font-size: 3em;
-    color: #314486;
-    margin-bottom: 60px;
+    color: #183063;
+    margin-top:60px;
 }
 
 .nome{
@@ -28,7 +28,7 @@
 }
 
 .programa:hover{
-    background:#eee;
+    background:#ddd;
 }
 
 .part4-container .carousel{
@@ -49,7 +49,7 @@
 
 .programa h2{
     margin:0;
-    color: #314486;
+    color: #183063;
 }
 
 .programa .sub-container .numero{
@@ -75,10 +75,11 @@
     content: "";
     position: absolute;
     top: 0;
-    height: 100%;
+    height: 105%;
     left: 49.9%;
     width: 1px;
     background-color: #999;
+    
 }
 
 .lermais{
@@ -167,6 +168,8 @@
     .part4-container h1 {
         text-align: left;
         margin-left: 10vw;
+        margin-top: 50px;
+        margin-bottom:0;
     }
 
     .sub-container {

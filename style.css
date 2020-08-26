@@ -80,6 +80,10 @@ body{
 .social > a:nth-child(1) {
     margin-right: 15px;
    }
+   .social > a:nth-child(1) > img:nth-child(1) {
+    width: 95%;
+   }
+   
 
    
 .social a{
@@ -206,5 +210,5 @@ a.abresuperform:nth-child(1) {
     #logo svg{
         width:30vw;
     }
-    
+
 }
