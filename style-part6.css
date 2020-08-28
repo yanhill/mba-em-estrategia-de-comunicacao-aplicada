@@ -66,6 +66,10 @@ margin-left: 10vw;
         .wrap-marco > figure:nth-child(1) {
             border: none;
   
-           }
+           }   
+           
+           .part6-container .about {
+            font-size: 0.7em;
+        }
 
 }
