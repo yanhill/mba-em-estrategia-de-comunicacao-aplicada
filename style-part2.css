@@ -12,7 +12,7 @@
     text-align: left;
     margin-right: 100px;
     letter-spacing: -0.05em;
-    font-family: 'gotham';
+    font-family: 'gotham-medium', 'gotham-black','Source Sans Pro',sans-serif;
     color: #183063;
 }
 .about-web-real{
