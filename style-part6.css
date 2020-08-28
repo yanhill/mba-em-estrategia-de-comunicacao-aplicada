@@ -1,0 +1,35 @@
+.part6-container > h1:nth-child(1) {
+    margin-left: 10vw;
+    margin-top: 5vh;
+    text-align: left;
+    font-size: 3em;
+    color: #183063;
+}
+.wrap-marco {
+    display: flex;
+    justify-content: center;
+   }
+
+.wrap-marco > .gallery__item{
+    display:flex;
+}
+
+.wrap-marco .gallery__img{
+    border:none;
+}
+.part6-container {
+    margin-bottom: 50px;
+    }
+
+    .wrap-marco > figure:nth-child(1) {
+        border: none;
+        border-bottom: solid 1px #ccc;
+       }
+       
+
+@media only screen and (max-width: 1200px) {
+    .part6-container > h1:nth-child(1) {
+    margin: 10vw 5vh;
+    text-align: center;
+}   
+}

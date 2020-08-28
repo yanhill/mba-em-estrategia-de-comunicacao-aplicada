@@ -94,7 +94,7 @@ margin-bottom: none;
         padding:0;
     }
     .bio{
-        border-top: 1px solid #aaa;
+        border-bottom: 1px solid #aaa;
         padding-top:20px;
     }
     .nome{
@@ -107,6 +107,9 @@ margin-bottom: none;
     }
     figure.gallery__item:nth-child(18) > div:nth-child(2) {
         border-bottom: 1px solid #999;
+       }
+       figure.gallery__item:last-childs > div:nth-child(2) {
+        border-bottom: 1px solid #aaa;
        }
        
 
