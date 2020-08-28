@@ -10,7 +10,12 @@
     min-width:300px;
     margin: 0;
     margin-bottom: 50px;
+    font-family: 'gotham-medium';
 }
+.part5-container > .bio{
+ border-bottom:1px solid #ccc;
+}
+
 figure {
     margin: 0px;
 }
@@ -49,7 +54,7 @@ padding-right: 5vw;
 
 .gallery__item{
     border-left: 1px solid #999;
-    margin: 5px;
+    margin: 10px 0;
 }
 
 .gallery__img {
