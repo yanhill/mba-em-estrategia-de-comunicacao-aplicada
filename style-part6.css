@@ -12,6 +12,10 @@
     justify-content: center;
    }
 
+   .part6-container .about {
+       font-size: 0.9em;
+   }
+
    .wrap-marco > .bio{
     font-size: 1.7em;
     padding-top: 40px;

@@ -22,10 +22,10 @@
     width: 55vw;
 }
 .part2-container {
-    background-image: url('img/grafo.png');
+    background-image: url('img/grafo-2.png');
     background-size: 180%;
     background-position-y: -1000px;
-    background-position-x: -100px;
+    background-position-x: 100px;
     background-repeat: no-repeat;
     }
 .text-about-web{
