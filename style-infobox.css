@@ -34,13 +34,14 @@
     text-decoration: none;
     padding: 20px;
     letter-spacing: 0.1em;
-    position: relative;
     font-weight: 600;
     color: #FE9000;
     border: 1px solid #FE9000;
     border-radius: 2.5px;
     margin: 0px 10px;
     font-family:'gotham-book';
+    line-height: 1.1em;
+    font-size: 1em;
 }
 
     .inscreva-se:hover{
