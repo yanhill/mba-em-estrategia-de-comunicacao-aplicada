@@ -101,7 +101,6 @@
     .header-content {
         position: absolute;
         top: 25vh;
-        margin-left: 10vw;
     }
     .subtitle{
         font-size: 3vw;
@@ -144,17 +143,18 @@
 }
 
 @media only screen and (max-width: 570px) {
+
     .head-content{
         position: absolute;
         top: 25vh;
     }
+    
     #primaryCover {
         background-image: url('img/capa-limpo-8.png');
     }
     .header-content{
         position: absolute;
         top: 25vh;
-        margin-left:10vw;
     }
     .agora-container{
         display: flex;
@@ -178,7 +178,7 @@
         letter-spacing: -0.02em;
         line-height: 1.1em;
         margin-top: 10px;
-        font-size: 5.4em;
+        font-size: 5.7em;
         width: 90%;
     }
     .agora-a-fgv{

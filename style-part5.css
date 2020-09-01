@@ -10,12 +10,7 @@
     min-width:300px;
     margin: 0;
     margin-bottom: 50px;
-    font-family: 'gotham-medium';
 }
-.part5-container > .bio{
- border-bottom:1px solid #ccc;
-}
-
 figure {
     margin: 0px;
 }
@@ -23,16 +18,16 @@ figure {
     color: #183063;
     text-align: left;
     font-size: 1.4em;
+    padding-top: 20px;
     padding:10px;
-    font-family: 'gotham-medium', 'gotham-black','Source Sans Pro',sans-serif;
-    margin-top: 20px;
+    font-family: 'Source Sans Pro',sans-serif;
 }
 
 .about{
     font-size: 0.7em;
 font-family: 'Source Sans Pro',sans-serif;
 font-weight: 300;
-
+padding-right: 5vw;
 }
 .part5-container {
     width: 55vw;
@@ -54,7 +49,7 @@ font-weight: 300;
 
 .gallery__item{
     border-left: 1px solid #999;
-    margin: 10px 0;
+    margin: 5px;
 }
 
 .gallery__img {
@@ -98,12 +93,9 @@ margin-bottom: none;
         width:40vw;
         padding:0;
     }
-    .about{
-        padding-right: 3vw;
-    }
     .bio{
-        border-bottom: 1px solid #aaa;
-        margin-top: 10px;
+        border-top: 1px solid #aaa;
+        padding-top:20px;
     }
     .nome{
         margin-bottom: 10px;
@@ -115,9 +107,6 @@ margin-bottom: none;
     }
     figure.gallery__item:nth-child(18) > div:nth-child(2) {
         border-bottom: 1px solid #999;
-       }
-       figure.gallery__item:last-childs > div:nth-child(2) {
-        border-bottom: 1px solid #aaa;
        }
        
 
