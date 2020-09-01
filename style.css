@@ -33,36 +33,82 @@ body{
     -webkit-overflow-x:hidden;
 }
 
+.siga-nos{
+    color: #023A78;
+    display: flex;
+align-self: center;
+letter-spacing: .1em;
+text-transform: uppercase;
+margin-right: 1.5vw;
+font-family: 'Source Sans Pro',sans-serif;
+font-weight: 300;
+}
+
+.subwrap-1{
+    display: flex;
+gap: 20px;
+background-color: #023A7894;
+border: 1px solid white;
+border-radius: 2.5px;
+padding: 0 2vw;
+font-family: 'Source Sans Pro',sans-serif;
+font-weight: 300;
+letter-spacing: .1em;
+}
+
 #header{
-    background: #4b3ff5;
-    z-index: 3;
+    z-index: 10;
     position: fixed;
     width: 100%;
+    padding-top: 20px;
 }
 
 .wrap {
-    width: 100%;
     position: relative;
-    padding: 15px 0;
     padding-right: 10vw;
     padding-left:10vw;
+    height: auto;
+display: flex;
+justify-content: space-between;
 }
+
+.outros-links > a{
+    border-left: 1px solid white;
+padding-left: 10px;
+}
+
+.outros-links{
+    display: flex;
+text-align: unset;
+align-items: center;
+gap: 10px;
+}
+
+#logo{
+    display: flex;
+text-align: unset;
+align-items: center;
+}
+
+.primeiro {
+    text-decoration: none;
+    color:white;
+    }
 
 .right {
     float: right;
-    display:flex;
+    border-radius: 2.5px;
+    padding: 1vh 2vw;
+    position: relative;
+    background-color: #FFFFFF4A;
+border: 1px solid #023A78;
 }
 
 .social{
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: flex;
     justify-content: space-between;
     -webkit-justify-content: space-between; 
     align-items: center;
+    display:flex;
 }
 
 .select {
@@ -84,13 +130,18 @@ body{
     width: 95%;
    }
    
-
-   
 .social a{
 }
 
-.social svg{
-    width: 3vw;
+.icone-rede > path{
+    fill: #023A78;
+}
+
+.midias{
+    display: flex;
+gap: 30px;
+justify-content: center;
+align-items: baseline;
 }
 
 svg:not(:root) {
@@ -99,6 +150,14 @@ svg:not(:root) {
 header#header .right .social {
     float: left;
 }
+
+.social > img {
+    width: 20px;
+    }
+    .social > a:nth-child(5) {
+        margin-right: 0;
+       }
+       
 
 .select .option.ativo {
     display: block;
@@ -185,23 +244,75 @@ a.abresuperform:nth-child(1) {
     display: none;
 }
 
+.midias > a:nth-child(1) > img:nth-child(1) {
+    width: 20px;
+   }
+   
+   .midias > a:nth-child(3) > svg:nth-child(1) {
+    width: 21px;
+   }
+   /* 1200 */
 @media only screen and (max-width: 1200px) {
-    .social svg{
-        width: 5vw;
+    .outros-links{
+        justify-content: space-between;
+padding-bottom: 5px;
     }
+    .wrap {
+        padding-right: 0;
+        padding-left: 0;
+        display: block;
+    }
+
+    .right{
+        border-radius: 0;
+        padding: .7vh 5vw;
+        border: none;
+        padding: .7vh 3vw;
+        background-color: #023A7894;
+        }
+    .social {
+        display:block;
+    }
+    .siga-nos{
+        display: none;
+        margin:0;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .midias{
+        display:flex;
+        justify-content: space-around;
+    }
+
+    .subwrap-1{
+        display:block;
+        padding: 0 8vw;
+    }
+
     .social a{
-        -webkit-padding: 0 10px;
-        padding: 0 10px;
+
     }
     #logo svg{
         width:25vw;
     }
+    #logo {
+        padding: 15px 0;
+    }
     .social > a:nth-child(1) {
         margin-right: 0;
        }
+
+       #header{
+           padding-top:0;
+       }
 }
 
+/*570 */
   @media only screen and (max-width: 570px) {
+    #header {
+        border-bottom: 1px solid #FFFFFFC4;
+        background: #023A7894;
+    }
 
     .wrap{
         padding-left: 5vw;
@@ -210,5 +321,22 @@ a.abresuperform:nth-child(1) {
     #logo svg{
         width:30vw;
     }
-
+    .right{
+        background:none;
+    }
+    .subwrap-1{
+        display:block;
+        gap:0;
+        background:none;
+        border:none;
+    }
+    .outros-links {
+        display: none;
+        }
+        .subwrap-1{
+            padding:0;
+        }
+        .midias{
+            gap:25px;
+        }
 }

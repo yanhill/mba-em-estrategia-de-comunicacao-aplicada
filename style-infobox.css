@@ -117,11 +117,10 @@ div.modalidade:nth-child(3) {
 
 @media only screen and (max-width: 1200px) {
     .information-box {
-        z-index: -1;
         margin: 0px auto;
         padding: 10px 0;
         position:unset;
-        transform: translateY(-75px);
+        transform: translateY(-120px);
         z-index: 1;
     }
 
@@ -140,12 +139,10 @@ div.modalidade:nth-child(3) {
 
 @media only screen and (max-width: 570px) {
     .information-box {
-        z-index: -1;
-        margin: 0px auto;
-        padding: 10px 0;
-        position:unset;
-        transform: translateY(-75px);
-        z-index: 1;
-        width: 350px;
+        position: static;
+        transform: translateY(-100px);
+        width:auto;
     }
+
+    
 }

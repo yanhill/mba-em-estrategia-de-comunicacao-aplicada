@@ -1,0 +1,253 @@
+.header-content{
+    margin-left: 5vw;
+    position: absolute;
+    top: 30vh;
+}
+
+.wrap-capa{
+    color:white;
+    height:100vh;
+    color:#fff;
+    font-size: 1.5vw;
+    border-top: 20px;
+    z-index: 2;
+    position: relative;
+    display:grid;
+    grid-template-columns: 1fr 1.25fr;
+}
+
+.wrap-tentativa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+
+.wrap-capa> .part1{
+    background-color:#023A78;
+}
+
+.wrap-tentativa h2 {
+    align-self: auto;
+    color: white;
+    font-family: gotham;
+    font-weight: 500;
+    font-size: 2em;
+    margin: 0;
+    border-left: 1px solid white;
+    padding-left: 10px;
+    width: 55%;
+    background-color: #001d3c6b;
+    }
+
+.wrap-capa > .part2{
+    background-image: url('img/black-people-in-fgv.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-x: right;
+}
+.cover-title h1{
+line-height: 1em;
+font-family: 'gotham-bold';
+text-transform: uppercase;
+line-height: 1em;
+font-size: 4.5vw;
+color: white;
+margin: 0;
+}
+.agora-a-fgvdapp{
+    font-size:.8em;
+    font-family: 'gotham-book', 'gotham';
+    letter-spacing: .1em;
+}
+.dapp{
+    font-family: 'gotham-black';
+}
+.header-content a{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-weight: 400;
+    letter-spacing: normal;
+    font-weight: 700;
+    display: block;
+    line-height: 15px;
+    color: White;
+    text-decoration: none;
+}
+
+.novo-curso-container{
+    position: relative;
+    top: 17vh;
+    margin-left: 10vw;
+    
+}
+.fgv-live{
+    width: 15vw;
+margin-bottom: 10px;
+}
+
+.black{
+    font-family: 'gotham-black';
+}
+.cover-title {
+    position: absolute;
+    margin-left: 10vw;
+    top: 35vh;
+z-index: 5;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    a.primeiro:nth-child(1) {
+        border-left: None;
+       }
+       .icone-rede > path {
+        fill: white;
+    }
+
+    .cover-title h1 {
+        font-size: 8vw;
+        margin-bottom: 20px;
+        }
+
+    .wrap-tentativa h2 {
+        font-size: 3vw;
+        width: 40%;
+padding-left: 5px;
+background:none;
+border:none;
+        }
+
+        .wrap-tentativa{
+            display:block;
+        }
+
+    .wrap-capa > .part2{
+        background-position-x: -800px;
+    }
+    .agora-a-fgvdapp{
+        margin-top:10px;
+        font-size:1.5em;
+    }
+    .wrap-capa{
+        height: 100vh;
+    }
+    .cover-title {
+        font-size: 6vw;
+        top: 33vh;
+        margin: 0 10vw;
+    }
+    .header-content {
+        position: absolute;
+        top: 25vh;
+        margin-left: 10vw;
+    }
+    .subtitle{
+        font-size: 3vw;
+        width: 60%;
+    }
+    .fgv-live{
+        width: 29vw;
+        height: auto;
+    }
+    .background-color {
+        background: #00000047;
+        height: 100%;
+    }
+    .ornamento{
+        width: 10vw;
+    }
+    .novo-curso{
+        font-size: 2.5vw;
+        letter-spacing: 0.05em;
+    }
+    .right{
+        padding-top:12px;
+    }
+    .primary-cover{
+        z-index: -1;
+position: relative;
+    }
+    .novo-curso-container{
+        top: 15vh;
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+
+    .cover-title h1 {
+        font-size: 8.5vw;
+        line-height: 1.1em;
+        margin-bottom:10px
+        }
+    .wrap-capa {
+        grid-template-rows: 1.5fr 0;
+        grid-template-columns: 1fr;
+        height:100vh;
+    }
+    .wrap-capa > .part2 {
+        height: auto;
+        background-position-x: right;
+        background-image:none;
+        background-color: #023A78;
+    }
+
+    .wrap-capa > .part1 {
+        background-image: url('img/black-people-in-fgv.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: -590px;
+        background-position-y: inherit;
+        
+        }
+
+        .wrap-tentativa h2{
+            background-color:none;
+        }
+
+    .cover-title {
+        top: 45vh;
+        font-size: 8.5vw;
+        width:80%;
+    }
+    .siga-nos {
+        display: none;
+    }
+    #logo {
+        padding:0;
+    }
+    .wrap {
+        margin: 0 5vw;
+        border-radius: 2.5px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+    .wrap-tentativa {
+        display: block;
+        }
+
+        .wrap-tentativa h2 {
+            font-size: 6vw;
+            width:90%
+            }
+    .right{
+        background-color:none;
+        padding:0;
+        border:none;
+    }
+    .fgv-live{
+        width: 60vw;
+        display: flex;
+    }
+
+    .novo-curso-container{
+        top: 10vh;
+        margin: 0 15vw;
+    }
+
+    .agora-a-fgvdapp {
+        font-size: 2.5em;
+        text-align: center;
+        }
+
+  }
