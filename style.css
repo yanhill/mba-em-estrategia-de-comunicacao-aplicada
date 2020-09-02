@@ -136,6 +136,9 @@ border: 1px solid #023A78;
 .icone-rede > path{
     fill: #023A78;
 }
+.icone-rede > circle{
+    fill: #023A78;
+}
 
 .midias{
     display: flex;
