@@ -65,15 +65,13 @@ letter-spacing: .1em;
 
 .wrap {
     position: relative;
-    padding-right: 10vw;
-    padding-left:10vw;
+    padding: 0 5vw;
     height: auto;
 display: flex;
 justify-content: space-between;
 }
 
 .outros-links > a{
-    border-left: 1px solid white;
 padding-left: 10px;
 }
 
@@ -88,6 +86,7 @@ gap: 10px;
     display: flex;
 text-align: unset;
 align-items: center;
+
 }
 
 .primeiro {
@@ -139,9 +138,9 @@ border: 1px solid #023A78;
 
 .midias{
     display: flex;
-gap: 30px;
-justify-content: center;
 align-items: baseline;
+min-width: 150px;
+justify-content: space-around;
 }
 
 svg:not(:root) {
@@ -252,6 +251,66 @@ a.abresuperform:nth-child(1) {
     width: 21px;
    }
    /* 1200 */
+
+   @media only screen and (max-width: 1366px) {
+    .siga-nos {
+        display: none;
+        }
+
+        .wrap-tentativa h2 {
+            align-self: auto;
+            /* align-self: auto; */
+            /* position: relative; */
+            color: white;
+            font-family: gotham;
+            font-family: gotham-book;
+            font-weight: 500;
+            font-size: 2em;
+            /* font-size: 2em; */
+            margin: 0;
+            border-left: 1px solid white;
+            padding-left: 10px;
+            width: 40%;
+            /* padding-left: 10px; */
+            width: 50%;
+            background-color: #001d3c6b;
+            line-height: 1.2em;
+            line-height: 1.6em;
+        }
+        .outros-links {
+            display: flex;
+            text-align: unset;
+            /* text-align: unset; */
+            align-items: center;
+            gap: 10px;
+            /* gap: 10px; */
+            /* color: white; */
+            /* display: flex; */
+            /* align-items: baseline; */
+            min-width: 550px;
+            justify-content: space-around;
+        }
+        .subwrap-1 {
+            display: flex;
+            gap: 20px;
+            /* gap: 20px; */
+            background-color: #023A7894;
+            border: 1px solid white;
+            border-radius: 2.5px;
+            padding: 0 2vw;
+            font-family: 'Source Sans Pro',sans-serif;
+            font-weight: 300;
+            letter-spacing: .1em;
+            letter-spacing: .05em;
+        }
+        .outros-links > a {
+            /* border-left: 1px solid white; */
+            padding-left: 10px;
+        }
+        
+   }
+
+   
 @media only screen and (max-width: 1200px) {
     .outros-links{
         justify-content: space-between;
