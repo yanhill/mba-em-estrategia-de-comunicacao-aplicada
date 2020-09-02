@@ -203,7 +203,7 @@ margin-bottom: 10px;
     }
 
     .wrap-capa > .part1 {
-        background-image: url('img/black-people-in-fgv-mobile2.png');
+        background-image: url('img/black-people-in-fgv.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position-x: right;
@@ -221,6 +221,7 @@ margin-bottom: 10px;
     }
     #logo {
         padding:0;
+        
     }
     .wrap {
         margin: 0 5vw;
@@ -234,7 +235,7 @@ margin-bottom: 10px;
         display: block;
         border-left: 1px solid #76aae1;
 padding-left: 5px;
-background: #023A785E;
+background: #023A7870;
 margin-right: 10vw;
         }
 
@@ -242,7 +243,7 @@ margin-right: 10vw;
             background-color:none;
             padding:0;
             font-size: 6vw;
-            width: 100%;
+            width: 90%;
 letter-spacing: .05em;
             }
     .right{
@@ -251,8 +252,9 @@ letter-spacing: .05em;
         border:none;
     }
     .fgv-live{
-        width: 60vw;
+        width: 55vw;
         display: flex;
+        top: -20px;
     }
 
     .novo-curso-container{

@@ -79,14 +79,15 @@ padding-left: 10px;
     display: flex;
 text-align: unset;
 align-items: center;
-gap: 10px;
+min-width: 580px;
+justify-content: space-between;
 }
 
 #logo{
     display: flex;
 text-align: unset;
 align-items: center;
-
+margin-right:10px
 }
 
 .primeiro {
@@ -287,7 +288,7 @@ a.abresuperform:nth-child(1) {
             /* color: white; */
             /* display: flex; */
             /* align-items: baseline; */
-            min-width: 550px;
+            min-width: 600px;
             justify-content: space-around;
         }
         .subwrap-1 {
@@ -356,6 +357,7 @@ padding-bottom: 5px;
     }
     #logo {
         padding: 15px 0;
+        margin:0;
     }
     .social > a:nth-child(1) {
         margin-right: 0;
