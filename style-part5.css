@@ -10,7 +10,7 @@
     min-width:300px;
     margin: 0;
     margin-bottom: 50px;
-    font-family: 'gotham-medium';
+    font-family: 'montserrat';
 }
 .part5-container > .bio{
  border-bottom:1px solid #ccc;
@@ -23,9 +23,11 @@ figure {
     color: #183063;
     text-align: left;
     font-size: 1.4em;
-    padding:10px;
-    font-family: 'gotham-medium', 'gotham-black','Source Sans Pro',sans-serif;
+    font-family: 'montserrat';
     margin-top: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: 5px;
 }
 
 .about{
