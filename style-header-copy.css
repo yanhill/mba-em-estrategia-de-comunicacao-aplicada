@@ -26,14 +26,12 @@
 }
 
 .wrap-tentativa h2 {
-    align-self: auto;
     color: white;
-    font-family: gotham;
-    font-weight: 500;
-    font-size: 2em;
-    margin: 0;
+    font-family: 'gotham-book';
+    font-weight: 400;
+    font-size: 1.8em;
     border-left: 1px solid white;
-    padding-left: 10px;
+    padding: 10px;
     width: 40%;
     background-color: #001d3c6b;
     line-height: 1.2em;
@@ -49,10 +47,9 @@
 line-height: 1em;
 font-family: 'gotham-bold';
 text-transform: uppercase;
-line-height: 1em;
 font-size: 4.5vw;
+line-height: auto;
 color: white;
-margin: 0;
 }
 .agora-a-fgvdapp{
     font-size:.8em;
@@ -83,7 +80,6 @@ margin: 0;
 .fgv-live{
     width: 15vw;
     position:relative;
-    top: -40px;
 }
 
 .black{
@@ -92,7 +88,7 @@ margin: 0;
 .cover-title {
     position: absolute;
     margin-left: 10vw;
-    top: 35vh;
+    top: 45vh;
 z-index: 5;
 }
 
@@ -119,7 +115,6 @@ z-index: 5;
 
     .cover-title h1 {
         font-size: 8vw;
-        margin-bottom: 20px;
         }
 
     .wrap-tentativa h2 {
@@ -140,6 +135,7 @@ border:none;
     .agora-a-fgvdapp{
         margin-top:10px;
         font-size:1.5em;
+        margin-right:0;
     }
     .wrap-capa{
         height: 100vh;
@@ -191,7 +187,7 @@ position: relative;
     .cover-title h1 {
         font-size: 8.5vw;
         line-height: 1.1em;
-        margin-bottom:10px
+        margin-bottom: 5px;
         }
     .wrap-capa {
         grid-template-rows: 1.5fr 0;
@@ -213,6 +209,7 @@ position: relative;
 
         .wrap-tentativa h2{
             background-color:none;
+            padding:0;
         }
 
     .cover-title {
