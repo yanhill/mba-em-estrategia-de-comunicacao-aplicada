@@ -47,11 +47,10 @@
 
 .part3-container h1{
     padding-bottom: 50px;
-    font-weight:500;
     margin: 0;
     margin-right:30px;
     min-width: 300px;
-    font-family: 'montserrat';
+    font-family: 'gotham-medium';
     color: #314486;
     text-align: left;
     font-size: 3em;
