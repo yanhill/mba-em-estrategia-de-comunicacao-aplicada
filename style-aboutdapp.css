@@ -1,0 +1,101 @@
+.about-dapp-container {
+    min-height: 600px;
+    display: grid;
+    z-index:60;
+    grid-template-columns: 55vw auto;
+    background: white;
+    z-index: 10;
+    position: relative;
+    z-index: 10;
+    position: relative;
+    margin: 0 10vw;
+}
+.about-dapp-subcontainer {
+    position: relative;
+    margin-left: 2vw;
+    margin-right: 5vw;
+    margin: 0 3vw;
+    display: flex;
+    justify-content: start;
+}
+.about-dapp-subcontainer p {
+    font-weight: 300;
+    color: black;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+.picture-dapp{
+    background-image: url('img/castells.jpg');
+    background-size: cover;
+    background-position-y: bottom;
+}
+.about-dapp-subcontainer svg{
+    width: 280px;
+}
+
+.sublogo-about-dapp {
+    height: 45%;
+    display: flex;
+    justify-content: center;
+}
+.texto {
+    position: absolute;
+    display: flex;
+}
+.content-about-dapp {
+    position: relative;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {               
+    .about-dapp-container {
+        grid-template-columns: 1fr 1.25fr;
+        margin: auto;
+        border-top: 1px solid #ccc;
+    }
+    .content-about-dapp {
+        width: 80%;
+    }
+    .about-dapp-subcontainer {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .sublogo-about-dapp path {
+        fill: white;
+    }
+    .sublogo-about-dapp{
+        fill: white;
+        margin-top: 80px;
+        border-bottom: 1px solid #595959;
+        height:auto;
+    }
+    .sublogo-about-dapp polygon {
+        fill: white;
+    }
+    .picture-dapp {
+        display: none;
+    }
+    .about-dapp-subcontainer p {
+        color: white;
+        line-height: 1.3em;
+        padding: 30px 10px;
+        font-weight: 100;
+        font-size: 1.3em;
+    }
+    .about-dapp-subcontainer svg {
+        width: 300px;
+    }
+    .about-dapp-container {
+        background-image: url('img/castells.jpg');
+        background-size: cover;
+        background-position-y: bottom;
+        grid-template-columns: 1fr auto;
+    }
+    .about-dapp-subcontainer {
+        background-color: #000000d6;
+        justify-content: center;
+        margin:0;
+    }
+}

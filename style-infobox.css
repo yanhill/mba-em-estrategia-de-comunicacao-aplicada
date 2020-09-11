@@ -17,7 +17,6 @@
 .info-container{
     margin-bottom: 30px;
     gap: 15px 10px;
-    height: 50%;
     padding-top: 0;
     padding: 30px 5px;
     font-family: 'Montserrat', sans-serif;
@@ -26,6 +25,7 @@
     color: #919191;
     font-size: 0.85em;
     font-weight: 500;
+    text-align:left;
 }
 
 .inscreva-se {
@@ -142,7 +142,6 @@ div.modalidade:nth-child(3) {
     .information-box {
         position: static;
         transform: translateY(-100px);
-        width:auto;
     }
 
     

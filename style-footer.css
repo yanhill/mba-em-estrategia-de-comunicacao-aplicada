@@ -1,0 +1,17 @@
+.container-footer {
+    display: flex;
+    margin: 0 10vw;
+    justify-content: space-between;
+    /*! d: ; *//*! position: absolute; */color: white;
+    padding: 60px 0;
+   }
+   .container-footer > div:nth-child(1) {
+    display: flex;
+    gap: 30px;
+   }
+   .footer {
+    /*! height: 100px; *//*! display: inline flow-root list-item; */position: relative;
+    background-color: #023A78;
+    margin-top: 100px;
+   }
+   
