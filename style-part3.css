@@ -2,18 +2,15 @@
     font-weight: 300;
     margin-bottom: 50px;
     font-size: 0.7em;
-    width: 45vw;
 }
 .part3-container .carousel{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     text-align: left;
-    gap: 20px;
 }
 .habilities p{
    margin:0;
-   font-size: 2em;
    line-height: 1.2em;
    width:95%;
    padding-left: 15px;
@@ -41,17 +38,15 @@
     line-height: 1.5em;
     min-height: 100px;
     align-items: center;
-    color: black;
-    border-left: 1px solid #919191;
-    background-color: #ffffff7d;
+    color: white;
+    border-left: 1px solid white;
 }
 .part3-container h1{
     min-width: 300px;
     font-family: 'montserrat';
-    text-align: left;
     line-height: 1.2em; 
-    color: #3A80CE;
-font-size: 4em;
+    text-align: center;
+    color: #FFF;
 }
 
 .all-3 {
@@ -63,9 +58,7 @@ position: relative;
     .part3-container{
         width:auto;
         display:block;
-
     }
-
     .habilities::before{
         transform: translate(-150%,0%);
         border-radius: 2px;
@@ -74,14 +67,9 @@ position: relative;
         margin: 0;
     }
     .part3-container h1 {
-        text-align: left;
-        font-size: 3rem;
         padding:0;
-        margin:0;
-        padding-top:10vw;
-        margin:0;
+        margin-top:0;
     }
-
     .habilities p{
         text-align: left;
         padding-left: 5px;
@@ -91,13 +79,11 @@ position: relative;
         margin-top:50px;
     }   
     .carousel .habilities{
-        padding: 40px;
         align-items: center;
-        color: black;
-        padding-left: 10px;
+       padding-left: 10px;
         margin-right: 0;
+        padding: 20px;
     }
-
 }
 
 @media only screen and (max-width: 570px) {
@@ -112,7 +98,7 @@ position: relative;
         padding-top: 0;
         text-align: center;
         font-size: 0.7em;
-        color:black;
+        color: #3A80CE;
     }
     .part3-container .carousel{
         grid-template-columns: repeat(1, 1fr);
@@ -131,6 +117,7 @@ position: relative;
         padding: 10vw 0;
         font-size: 0.8em;
         background-color: none;
+        color: #3A80CE;
     }
 
     .habilities::before{
@@ -145,7 +132,8 @@ position: relative;
 text-align: center;
 padding: 10vw 0;
 padding-bottom: 0;
-font-size:3em;
+color: #3A80CE;
+font-size: 1.5em;
     }
 
     .all-3{

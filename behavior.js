@@ -22,3 +22,7 @@ function changeOverlayHeight(){
    // headerOverlay.style.height = videoHeight+'px';
     primaryCover.style.height = videoHeight+'px';
 }
+
+$(window).scroll(function(){
+  $("#informationBox").css("top",Math.min($("#primaryCover").height()/4,$("#primaryCover").height()+$("#part2Subcontainer").height()-$("#aboutDappContainer").height()-$(this).scrollTop()));
+});

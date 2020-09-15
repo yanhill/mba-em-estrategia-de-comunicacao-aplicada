@@ -19,16 +19,14 @@
 .about-dapp-subcontainer p {
     font-size: 1.2em;
     font-weight: 200;
-color: white;
-line-height: 1.5em;
-margin: 0;
-max-width: 800px;
-margin: 15px;
-border-left: 1px solid white;
-padding-left: 25px;
-letter-spacing: 0.02em;
-}
-.picture-dapp{
+    color: white;
+    line-height: 1.5em;
+    margin: 0;
+    max-width: 800px;
+    margin: 15px;
+    border-left: 1px solid white;
+    padding-left: 25px;
+    letter-spacing: 0.02em;
 }
 .about-dapp-subcontainer svg{
     width: 250px;
@@ -41,7 +39,6 @@ letter-spacing: 0.02em;
 #Layer_1 > path{
     fill:white;
 }
-
 .texto {
     text-align: left;
     display: flex;
@@ -50,7 +47,10 @@ letter-spacing: 0.02em;
     position: relative;
     width: 100%;
     background: #000000db;
-display: flex;
+    display: flex;
+}
+#Layer_1 > path {
+    fill: #023A78;
 }
 
 @media only screen and (max-width: 1200px) {               
@@ -61,6 +61,9 @@ display: flex;
     .about-dapp-subcontainer {
         justify-content: center;
     }
+    #Layer_1 > path {
+        fill: white;
+        }
 }
 
 @media only screen and (max-width: 570px) {

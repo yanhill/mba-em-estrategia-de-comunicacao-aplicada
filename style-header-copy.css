@@ -3,7 +3,6 @@
     position: absolute;
     top: 30vh;
 }
-
 .wrap-capa{
     color:white;
     height:100vh;
@@ -15,16 +14,13 @@
     display:grid;
     grid-template-columns: 1fr 1.25fr;
 }
-
 .wrap-tentativa {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    }
-
+}
 .wrap-capa> .part1{
     background-color:#023A78;
 }
-
 .wrap-tentativa h2 {
     color: white;
     font-family: 'montserrat';
@@ -44,14 +40,14 @@
     background-position-x: right;
 }
 .cover-title h1{
-line-height: 1.1em;
-font-family: 'montserrat';
-text-transform: uppercase;
-margin:0;
-letter-spacing:.05em;
-font-size: 4.5vw;
-line-height: auto;
-color: white;
+    line-height: 1.1em;
+    font-family: 'montserrat';
+    text-transform: uppercase;
+    margin:0;
+    letter-spacing:.05em;
+    font-size: 4.5vw;
+    line-height: auto;
+    color: white;
 }
 .agora-a-fgvdapp{
     font-size:.75em;
@@ -72,66 +68,58 @@ color: white;
     color: White;
     text-decoration: none;
 }
-
 .novo-curso-container{
     position: relative;
     top: 17vh;
     margin-left: 10vw;
-    
 }
 .fgv-live{
     width: 15vw;
     position:relative;
     top:-10px;
 }
-
 .black{
     font-family: 'gotham-black';
 }
 .cover-title {
     position: absolute;
     margin-left: 10vw;
-    top: 40vh;
-z-index: 5;
+    top: 35vh;
+    z-index: 5;
 }
 
 @media only screen and (max-width: 1366px) {
     .cover-title {
         top: 35vh;
         top: 40vh;
+    }
+    .wrap-tentativa h2 {
+        font-size: 1.5em;
+        padding: 10px;
         }
-
-        .wrap-tentativa h2 {
-            font-size: 1.5em;
-            padding: 10px;
-            }
    }
 
 @media only screen and (max-width: 1200px) {
 
     a.primeiro:nth-child(1) {
         border-left: None;
-       }
-       .icone-rede > path {
+    }
+    .icone-rede > path {
         fill: white;
     }
-
     .cover-title h1 {
         font-size: 8vw;
-        }
-
+    }
     .wrap-tentativa h2 {
         font-size: 3vw;
         width: 40%;
-padding-left: 5px;
-background:none;
-border:none;
-        }
-
-        .wrap-tentativa{
-            display:block;
-        }
-
+        padding-left: 5px;
+        background:none;
+        border:none;
+    }
+    .wrap-tentativa{
+        display:block;
+    }
     .wrap-capa > .part2{
         background-position-x: cover;
     }
@@ -177,7 +165,7 @@ border:none;
     }
     .primary-cover{
         z-index: -1;
-position: relative;
+        position: relative;
     }
     .novo-curso-container{
         top: 15vh;
@@ -190,9 +178,8 @@ position: relative;
     .cover-title h1 {
         line-height: 1.1em;
         font-size: 8vw;
-margin-bottom: 10px;
-
-        }
+        margin-bottom: 10px;
+    }
     .wrap-capa {
         grid-template-rows: 1.5fr 0;
         grid-template-columns: 1fr;
@@ -201,16 +188,13 @@ margin-bottom: 10px;
     .wrap-capa > .part2 {
         display: none;
     }
-
     .wrap-capa > .part1 {
         background-image: url('img/black-people-in-fgv-mobile3.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position-x: right;
         background-position-y: inherit;
-        
-        }
-
+    }
     .cover-title {
         top: 45vh;
         font-size: 8.5vw;
@@ -220,8 +204,7 @@ margin-bottom: 10px;
         display: none;
     }
     #logo {
-        padding:0;
-        
+        padding:0;    
     }
     .wrap {
         margin: 0 5vw;
@@ -234,18 +217,17 @@ margin-bottom: 10px;
     .wrap-tentativa {
         display: block;
         border-left: 1px solid #76aae1;
-padding-left: 5px;
-background: #023A7870;
-margin-right: 10vw;
-        }
-
-        .wrap-tentativa h2 {
-            background-color:none;
-            padding:0;
-            font-size: 6vw;
-            width: 90%;
-letter-spacing: .05em;
-            }
+        padding-left: 5px;
+        background: #023A7870;
+        margin-right: 10vw;
+    }
+    .wrap-tentativa h2 {
+        background-color:none;
+        padding:0;
+        font-size: 6vw;
+        width: 90%;
+        letter-spacing: .05em;
+    }
     .right{
         background-color:none;
         padding:0;
@@ -256,16 +238,13 @@ letter-spacing: .05em;
         display: flex;
         top: -20px;
     }
-
     .novo-curso-container{
         top: 10vh;
         margin: 0 15vw;
     }
-
     .agora-a-fgvdapp {
         font-size: 2.5em;
         text-align: center;
         margin-right:0;
-        }
-
-  }
+    }
+}
