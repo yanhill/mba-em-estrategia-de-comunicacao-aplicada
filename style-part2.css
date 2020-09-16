@@ -1,99 +1,132 @@
-.part2-container{
+.sobre-mba-container{
     background-image: url('img/grafo-2.png');
     background-position-y: -1000px;
     background-repeat: no-repeat;
-    z-index: -2;
-    position: relative;
-    z-index: -2;
-    padding-bottom: 0;
     border-bottom: 1px solid #ccc;
 }
-
-.title-about-web{
-    letter-spacing: -0.05em;
-    font-family: 'gotham-medium', 'gotham-black','Source Sans Pro',sans-serif;
-    font-size: 3.5rem;
-    color: #FFF;
-margin: 0;
+.sobre-o-curso{
+    width: 45vw;
+    border-radius: 2.5px;
 }
-.about-web-real{
-    font-size: 2em;
-    font-weight: 300;
-    text-align:left;
-    width: auto;
-    width: 50vw;
-    background-color: #FFFFFF78;
-    background-color: #023A78C4;
-border: 1px solid #959595;
-    border-left: 1px solid #959595;
-padding: 20px 40px;
-border-radius: 2.5px;
+.texto-chamada {
+    text-align: center;
+    }
+.title-about-web {
+    font-size: 2.5em;
+    line-height: 1.2em;
 }
-
-.text-about-web{
-    letter-spacing: .01em;
-font-weight: 200;
-padding-bottom: 50px;
-color: white;
-}
-/*imagem*/
 .about-web{
     font-size: 2rem;
     font-weight: 300;
     background-image: url('img/image2.png');
     text-align: left;
 }
+.text-about-web {
+    font-size: 1.5em;
+    font-weight: 300;
+}
 .subcontainer-2 {
     padding: 5vh 10vw;
-    }
+}
+.durante-o-curso {
+    margin: 150px 0;
+}
+.durante-o-curso h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+.durante-o-curso .carousel-habilidades{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.habilities p{
+    font-size: 1.5em;
+    font-weight: 300;
+}
+.carousel-habilidades .habilities {
+    display: flex;
+    align-items: center;
+    min-height: 250px;
+}
+.habilities:nth-of-type(1n){
+    text-align:right;
+    padding-right:20px;
+}
+.habilities:nth-of-type(2n) {
+    transform:translateY(50%);
+    text-align:left;
+    padding:0;
+    padding-left:20px;
+}
+.carousel-habilidades::before {
+    content: "";
+    position: absolute;
+    min-height: 95%;
+    left: 32.5%;
+    width: 1px;
+    background-color: #BBB;
+}
+.habilities::after {
+    content: "";
+    position: absolute;
+    width: .5rem;
+    height: .5rem;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-color: #000;
+    left: 0;
+    transform: translateX(31.9vw);
+}
+.habilities:nth-of-type(2n)::after {
+    left: 0;
+    transform: translateX(-0.5vw);
+}
+
+
 
 @media only screen and (max-width: 1200px) {   
     .background-color-2{
         background: #1f020247;
         height:100%;
     }  
-    .about-web-real {
+    .sobre-o-curso {
         width: auto;
-        }
-    .part2-container{
+        margin:auto;
+    }
+    .carousel-habilidades::before {
+        left: 50%;
+    }
+    .habilities::after {
+        transform: translateX(50vw);
+    }
+    .sobre-mba-container{
         background-size: 250%;
         background-position-y: -600px;
         background-position-x: -300px;
-        z-index:0;
     }
-    .subcontainer-2{
+    .durante-o-curso{
         width:auto;
-    } 
-    .title-about-web{
-        padding-bottom: 0;
-        font-size: 3rem;
-        line-height: 3rem;
-        border-radius: 5px;
-        border-left:none;
-        margin-bottom: 20px;
-    }    
-    .about-web {
-        font-size: 1.2rem;
-        font-weight: 300;        
-        line-height:1.5em;
-        margin: 0;
-        background-position-x: right;
-        background-size: cover;
+        display:block;
     }
-
-    .text-about-web{
-        width: auto;
-        padding-right: 0;
-        font-size: 0.7em;
+    .durante-o-curso h1 {
+        padding:0;
         margin-top:0;
-        border-left: none;
-        padding-bottom:0;
     }
-
+    .durante-o-curso .carousel-habilidades {
+        gap: 20px 0;
+        margin-top:50px;
+    } 
+    .habilities::after {
+        transform: translateX(50vw);
+    }
+    .habilities:nth-of-type(2n)::after {
+        right: 0;
+        transform: none;
+    }
 }
 
 @media only screen and (max-width: 570px) {
-    .part2-container {
+    .sobre-mba-container {
         max-width: 100vw; 
         display:block;
         text-align: left;
@@ -103,52 +136,63 @@ color: white;
         background-position-x: -200vw;
     }
     .title-about-web {
-        padding-bottom: 10vw;
-        padding-bottom: 0vw;
         margin: 0;
         line-height: 1.2em;
-        padding:0;
-        letter-spacing: -0.06em;
-        padding-bottom: 10px;
-        text-align: center;
-       font-size: .9em;
-       color: #3A80CE;
+        font-size: 2em;        
     }
-    
-    .about-web {
-        padding:0;
-        font-size: 1.2rem;
-        font-weight: 300;
-        min-height:200px;
-        background-position-y: center;
-        background-color: #ffffff91;
-        padding: 10px 5px;
-        border-top: 1px solid black;
+    .text-about-web{
+        font-size: 1.25em;
     }
-    .about-web-real{
-        width: auto;
+    .sobre-o-curso{
         background-color: #ffffff91;
         padding: 30px 0;
         border-top: 1px solid #959595;
         border-left:none;
         border-right: none;
     }
-    .text-about-web{
-        margin-left:0;
-        margin-top: 20px;
-        font-size: 0.6em;
-        padding:0;
-        border-left: none;
-        margin-top: 20px;
-        background:0;
-        color: #3A80CE;
-    }
-    .part2-container {
+    .sobre-mba-container {
         max-width: auto;
-        text-align: center;
+        text-align: center;  
     }
-    .about-web-real{
-        text-align: center;
+    div.habilities:nth-child(1) {
+        border-top: 0;
     }
-    
+    .durante-o-curso{
+        display:block;
+        margin: 30px 0vw;
+        border-top: 1px solid #959595;
+        padding-top: 0;
+    }
+    .durante-o-curso .carousel-habilidades{
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 0;
+    }
+    .carousel-habilidades .habilities {
+        border:none;
+        border-top: 1px solid #ddd;
+        padding: 10vw 0;
+        background-color: none;
+        text-align: center;
+        min-height: 50px;
+    }
+    .habilities::before{
+        display: none;
+    }
+    .durante-o-curso h1 {
+        padding: 10vw 0;
+        padding-bottom: 0;
+        font-size: 2em;
+    }
+    .habilities p {
+        font-size: 1.25em;
+        }
+    .habilities:nth-of-type(2n) {
+        transform: none;
+        }
+        .carousel-habilidades::before {
+            display:none;
+        }
+        .habilities::after {
+            display:none;
+        }
 }

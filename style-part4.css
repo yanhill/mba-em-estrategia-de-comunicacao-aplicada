@@ -1,10 +1,10 @@
-.part4-container {
+.programa-container {
     margin-bottom: 150px;
     width: 55vw;
     margin: 100px auto;
     margin-bottom: 200px;
 }
-.part4-container h1{
+.programa-container h1{
     margin-top:60px;
     text-align: center;
     font-size: 3em;
@@ -28,7 +28,7 @@
 .programa:hover{
     background:#ddd;
 }
-.part4-container .carousel{
+.programa-container .carousel{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 1.5rem;
@@ -60,7 +60,7 @@
     left: 0;
     transform: translate(-200%,0%);
 }
-.part4-container .carousel::before {
+.programa-container .carousel::before {
     content: "";
     position: absolute;
     top: 0;
@@ -133,12 +133,8 @@
     padding:1rem;
     padding-bottom: 0.5rem;
 }
-
-.title-plus{
-}
-
 @media only screen and (max-width: 1200px) {
-    .part4-container {
+    .programa-container {
         width: auto;
         margin: 0 10vw;
         margin-bottom: 150px;
@@ -150,7 +146,7 @@
 
 @media only screen and (max-width: 570px) {
 
-    .part4-container h1 {
+    .programa-container h1 {
         text-align: left;
         margin-left: 10vw;
         margin-top: 50px;
@@ -170,12 +166,12 @@
         padding:10px 0;
     }
 
-    .part4-container {
+    .programa-container {
         width: auto;
         margin: 0;
         }
 
-    .part4-container .carousel{
+    .programa-container .carousel{
         display:block;
         padding-top:0;
     }
@@ -185,14 +181,14 @@
         margin-bottom: 5px;
     }
 
-    .part4-container .carousel::before{
+    .programa-container .carousel::before{
         z-index: -1;
     }
 
     .numero{
         margin-bottom:5px;
     }
-    .part4-container .carousel::before {
+    .programa-container .carousel::before {
         display: none;
     }
 
