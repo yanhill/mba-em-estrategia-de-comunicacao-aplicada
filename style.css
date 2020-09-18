@@ -129,9 +129,6 @@ margin-right:10px
    .social > a:nth-child(1) > img:nth-child(1) {
     width: 95%;
    }
-   
-.social a{
-}
 
 .icone-rede > path{
     fill: #023A78;
@@ -350,13 +347,6 @@ padding-bottom: 5px;
     .subwrap-1{
         display:block;
         padding: 0 8vw;
-    }
-
-    .social a{
-
-    }
-    #logo svg{
-        /* width:25vw; */
     }
     #logo {
         padding: 15px 0;

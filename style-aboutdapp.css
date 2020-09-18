@@ -2,9 +2,10 @@
     min-height: 600px;
     display: grid;
     position: relative;
-    background-image: url('img/dapp-laboratorio.jpg');
+    background-image: url('img/fgv/fgv-1.jpg');
     background-size: cover;
-    background-position-y: center;
+    background-position-y: bottom;
+    
 }
 .about-dapp-subcontainer {
     display: flex;
@@ -30,11 +31,18 @@
     display: flex;
     width: 50vw;
 }
-
+#aboutDappContainer::before {
+    position: absolute;
+    height: 600px;
+    left: 32.5%;
+    width: 2px;
+    background-color: white;
+    }
 @media only screen and (max-width: 1200px) {               
     .about-dapp-container {
         margin: auto;
         border-top: 1px solid #ccc;
+        background-position-y: -80px;
     }
     .about-dapp-subcontainer {
         justify-content: center;
@@ -51,35 +59,39 @@
     .sublogo-about-dapp path {
         fill: white;
     }
+    .picture-dapp {
+        display: none;
+    }
     .sublogo-about-dapp{
         fill: white;
-        border-bottom: 1px solid #595959;
+        border-bottom: 1px solid #ececec;
         height:auto;
     }
     .sublogo-about-dapp polygon {
         fill: white;
     }
-    .picture-dapp {
-        display: none;
-    }
     .about-dapp-subcontainer p {
-        color: white;
         line-height: 1.3em;
-        padding: 30px 0px;
         font-weight: 100;
-        font-size: 1.3em;
         margin:0;
         border-left:none;
         text-align: center;
+        color: #ececec;
+        padding: 30px 20px;
+        font-size: 1.1em;
+        letter-spacing: 0.05em;
     }
     .about-dapp-subcontainer svg {
         width: 300px;
+        padding:auto;
     }
     .about-dapp-container {
-        background-image: url('img/dapp-laboratorio.jpg');
+        background-image: url('img/fgv/fgv-2.jpg');
         background-size: cover;
         background-position-y: bottom;
         grid-template-columns: 1fr auto;
+        height: 100vh;
+        background-position-x: right;
     }
     .about-dapp-subcontainer {
         background-color: #000000ba;
@@ -91,4 +103,7 @@
         display: block;
         width:80%;
     }
+    .texto {
+        background: #000000d6;
+        }
 }
