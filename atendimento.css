@@ -1,0 +1,49 @@
+.whatsapp-icone {
+    font-family: 'montserrat';
+    font-weight: 600;
+    font-size:.7em;
+    letter-spacing: .1em;
+margin-right: 15px;
+line-height:1.1em;
+}
+.atendimento-whatsapp {
+    margin-bottom: 5vh;
+    padding: 10px 15px;
+    background-color: #023A78F5;
+    border-radius: 200px;
+    color: White;
+    display: flex;
+    padding-right: 10px;
+    align-items: center;
+    text-decoration: none;
+}
+.atendimento-whatsapp > img:nth-child(2) {
+    width: 30px;
+}
+
+.atendimento-whatsapp:hover{
+    color:orange;
+    fill:orange;
+    cursor:pointer;
+}
+.atendimento-whatsapp:hover > .ico{
+    fill:orange;
+}
+
+.ico {
+    fill: white;
+    }
+    .ico > svg:nth-child(1) {
+        width: auto;
+        height: 27px;
+        }
+
+        .atendiment-whatsapp-container {
+            display: flex;
+            width: 100vw;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            justify-content: center;
+            z-index: 10;
+            }
