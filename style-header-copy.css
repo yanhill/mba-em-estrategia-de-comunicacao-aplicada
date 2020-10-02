@@ -33,7 +33,7 @@
     line-height: 1.2em;
 }
 .wrap-capa > .part2{
-    background-image: url('img/black-people-in-fgv-mobile3.png');
+    background-image: url('img/otimizado/bp-fgv.jpg');
     background-repeat: no-repeat;
     background-size:cover;
     background-position-x: right;
@@ -51,11 +51,12 @@
 .agora-a-fgvdapp{
     font-size:.75em;
     font-family: 'montserrat';
-    letter-spacing: .1em;
+    letter-spacing: .05em;
     margin-right: 150px;
 }
 .dapp{
-    font-family: 'gotham-black';
+    font-family: 'montserrat';
+font-weight: bold;
 }
 .header-content a{
     font-family: 'Source Sans Pro',sans-serif;
@@ -188,7 +189,7 @@
         display: none;
     }
     .wrap-capa > .part1 {
-        background-image: url('img/black-people-in-fgv-mobile3.png');
+        background-image: url('img/otimizado/bp-fgv.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position-x: right;

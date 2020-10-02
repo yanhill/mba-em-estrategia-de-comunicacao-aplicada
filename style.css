@@ -2,23 +2,6 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: 'gotham-bold';
-    src: url('font/gotham/GothamBold.ttf');
-}
-@font-face {
-    font-family: 'gotham-book';
-    src: url('font/gotham/GothamBook.ttf');
-}
-@font-face {
-    font-family: 'gotham-medium';
-    src: url('font/gotham/GothamMedium_0.ttf');
-}
-@font-face {
-    font-family: 'gotham-black';
-    src: url('font/gotham/Gotham-Black.otf');
-}
-
 html{
     overflow-x: hidden;
     -webkit-overflow-x:hidden;
@@ -42,30 +25,27 @@ text-transform: uppercase;
 margin-right: 1.5vw;
 font-family: 'Source Sans Pro',sans-serif;
 font-weight: 300;
+display:none;
 }
 
 .subwrap-1{
     display: flex;
     gap: 20px;
     background-color: #023A78F5;
-    border: 1px solid white;
-    border-radius: 2.5px;
     padding: 0 2vw;
     font-family: 'Source Sans Pro',sans-serif;
     font-weight: 300;
     letter-spacing: .1em;
+    border-bottom: 1px solid white;
 }
 
 #header{
     z-index: 10;
     position: fixed;
     width: 100%;
-    padding-top: 20px;
 }
 
 .wrap {
-    position: relative;
-    padding: 0 5vw;
     height: auto;
 display: flex;
 justify-content: space-between;
@@ -79,7 +59,7 @@ padding-left: 10px;
     display: flex;
 text-align: unset;
 align-items: center;
-min-width: 580px;
+min-width: 600px;
 justify-content: space-between;
 }
 
@@ -95,13 +75,16 @@ margin-right:10px
     color:white;
     }
 
+    .primeiro:hover{
+        color:orange;
+    }
+
 .right {
     float: right;
     border-radius: 2.5px;
     padding: 1vh 2vw;
     position: relative;
-    background-color: #FFFFFFC9;
-    border: 1px solid #023A78;
+    padding-bottom: 0;
 }
 
 .social{
@@ -123,9 +106,7 @@ margin-right:10px
     right: 4px;
     top: 10px;
 }
-.social > a:nth-child(1) {
-    margin-right: 15px;
-   }
+
    .social > a:nth-child(1) > img:nth-child(1) {
     width: 95%;
    }
@@ -142,6 +123,7 @@ margin-right:10px
 align-items: baseline;
 min-width: 150px;
 justify-content: space-around;
+display:none;
 }
 
 svg:not(:root) {

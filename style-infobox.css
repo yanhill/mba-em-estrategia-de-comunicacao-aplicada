@@ -4,12 +4,12 @@
     position: fixed;
     top: 30vh;
     width: 340px;
-    box-shadow: 2px 2px 0.5em #555;
     border-radius: 2px;
     z-index: 0;
     padding: 10px 0;
     right: 0;
-    margin-right: 10vw;
+    margin-right: 2vw;
+border: 1px solid #ccc;
 }
 
 .carva-horaria{
@@ -141,8 +141,9 @@ div.modalidade:nth-child(3) {
 @media only screen and (max-width: 570px) {
     .information-box {
         position: static;
-        transform: translateY(-70px);
-        width:auto;
+        transform: translate(0);
+width: none;
+margin: 20px auto;
     }
 
     

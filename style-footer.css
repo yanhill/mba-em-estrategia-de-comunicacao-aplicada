@@ -1,34 +1,51 @@
 .container-footer {
     display: flex;
-    margin: 0 10vw;
-    justify-content: space-between;
-    color: white;
-    padding: 50px 0;
+    margin: 0 20vw;
+padding: 10vh 0;
+justify-content: space-between;
+}
+
+.midias{
+    display: flex;
+align-items: baseline;
+min-width: 200px;
+justify-content: space-around;
+}
+.icone-rede > path, circle{
+    fill: #6c6c6c;
 }
 .container-footer > div:nth-child(1) {
     display: flex;
-    gap: 30px;
+color: #dfdfdf;
 }
 .footer {
     position: relative;
-    background-color: #3A80CE;
+    background-color: #f4f4f4;
+border-top: 1px solid #aaa;
 }
 .terceiro {
-    border-left: 1px solid white;
-    padding: 0 10px;
-    letter-spacing: .05em;
-    font-weight: 300;
+    letter-spacing: .075em;
+display: flex;
+align-items: center;
+gap:20px;
+color: #6c6c6c;
+font-weight: 400;
+}
+.logo-rodape{
+    height: 100px;
+}
+.logo-rodape path,.st8, .st1, .st9, .st0{
+    fill: #6c6c6c;
 }
 
 @media only screen and (max-width: 570px) {
     .terceiro {
-        padding: 0 10px;
         letter-spacing: .05em;
         font-weight: 300;
         text-align: center;
         padding-top: 10px;
-        border-top: 1px solid #ffffff82;
         border-left:none;
+        padding: 10px;
     }
     .container-footer {
         display: block;

@@ -9,19 +9,30 @@
    }
 
    .tops {
-    width: 50vw;
-    margin: 0 auto;
+    margin: 0 20vw;
     }
 
+    .nome-inferior {
+        display: none;
+        }
+        .nome-superior {
+        font-size: 1.4em;
+        font-family: 'montserrat';
+        font-weight: 700;
+        color: #3A80CE;
+        }
+
+        .gallery .about {
+            margin: 10px;
+            }
 .corpo-docente-container h1 {
     text-align: center;
     font-family: 'montserrat';
-    font-size: 2em;
-    color: #8e8e8e;
-    font-weight: 100;
-    padding: 10px 0;
-    display: flex;
-    justify-content: center;
+    font-size: 1em;
+font-weight: 400;
+letter-spacing:0.1em;
+color: #555;
+margin: 100px 0;
 }
 .corpo-docente-container > .bio{
  border-bottom:1px solid #ccc;
@@ -37,7 +48,17 @@ figure {
     font-weight: 700;
     color: #3A80CE;
     margin-top:10px;
+    max-width: 250px;
 }
+.bio-top{
+    max-width:none;
+}
+
+.coordenacao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    }
 
 .about{
     font-size: 0.7em;
@@ -51,14 +72,12 @@ figure {
 .corpo-docente-container {
     margin-top: 10vw;
    } 
-   .wrap-marco {
-    display: flex;
-   }
+
 
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 0 10vw;
+    margin: 0 15vw;
 justify-items: center;
 }
 .gallery h1 {
@@ -71,15 +90,14 @@ justify-items: center;
 
 .gallery__item{
     border-left: 1px solid #999;
-    margin: 50px 0px;
-min-width: 300px;
+    margin: 30px 0px;
 }
 .gallery__img {
-    max-width: 220px;
-    height: 300px;
+    height: 250px;
+    width:250px;
     margin-bottom: none;
     object-fit: cover;
- 
+    object-position: top; 
 } 
 .nome, .about{
     margin-left: 10px;
@@ -87,15 +105,37 @@ min-width: 300px;
 
 .wrap-marco .nome {
     font-size: 1.5em;
+    margin-right: 10px;
 }
 .wrap-marco .about {
     font-size: 1em;
 }
 
     .wrap-marco > .gallery__item {
-        display:inline-flex;
-        width: 100%;
+        display: grid;
+grid-template-columns: 1fr auto;
         }
+
+        .img-top{
+            width: 180px;
+        }
+
+        div.wrap-marco:nth-child(1) > figure:nth-child(2) {
+            border-bottom: solid 1px #ccc;
+            border-left: none;
+            }
+
+            .coordenacao > div:nth-child(2) > figure:nth-child(2) {
+                border-bottom: solid 1px #ccc;
+                border-left: none;
+                }
+
+                .coordenacao .bio {
+                    font-size: 1.25em;
+                    }
+                    .coordenacao .nome {
+                    font-size: 1.3em;
+                    }
 
 @media only screen and (max-width: 1200px) {
     .gallery {
@@ -114,6 +154,7 @@ min-width: 300px;
     }
     .bio{
         font-size: 1.2em;
+
     }  
     .part6-container {
         margin-left: 0;
@@ -141,23 +182,52 @@ min-width: 300px;
 }
 
 @media only screen and (max-width: 570px) {
+
+    .coordenacao{
+        display:block;
+    }
+    .about::before {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 1px;
+        background-color: #6FAEFF;
+        transform: translate(-20px, 8px);
+z-index: -1;
+border-radius: 1px;
+    }
+    .nome-superior {
+        display: none;
+        }
+        .nome-inferior {
+            display: block;
+            }
+
+            .gallery__item:active .gallery__img {
+                width: 40vw;
+                transition: 0.5s;
+                }
     .gallery {
         grid-template-columns: repeat(1, 1fr);
         margin: auto;
         justify-items: left;
     }
+    
+    .gallery .about {
+        margin: 5px 20px;
+        }
     .corpo-docente-container {
         margin: 0;
     }
     .gallery__item {
         border: none;
         margin:0;
-        height: 200px;
         display:flex;
     }
     .gallery__img{
-        height:auto;
+        height: 200px;
         width:35vw;
+        
     }
     .about{
         margin-left: 10px;
@@ -165,8 +235,9 @@ min-width: 300px;
         margin-right: 8vw;
     }
     .bio{
-        margin-top:20px;
-        border-bottom: 1px solid #aaa;
+        margin-top: 25px;
+        user-select: none;
+        border-bottom: 1px solid #BDBDBDC4;
     }
     .wrap-marco .nome {
         font-size: 1em;
@@ -175,19 +246,19 @@ min-width: 300px;
         font-size: .8em;
     }
     .nome{
-        margin-bottom: 5px;
+        margin-bottom: 15px;
         font-size: 1em;
     }
     .corpo-docente-container h1 {
-        margin-left: 5vw;
-        text-align: left;
-        font-size:3em;
+color: #555;
+font-size: 1em;
+margin: 70px 0;
     }
     figure.gallery__item:nth-child(18) > div:nth-child(2) {
-        border-bottom: 1px solid #999;
+        border-bottom:none;
     }
     figure.gallery__item:last-childs > div:nth-child(2) {
-        border-bottom: 1px solid #aaa;
+        border-bottom:none;
     }
     .wrap-marco > figure:nth-child(1) {
         border: none;

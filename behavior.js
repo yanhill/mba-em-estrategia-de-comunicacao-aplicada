@@ -26,3 +26,11 @@ function changeOverlayHeight(){
 $(window).scroll(function(){
   $("#informationBox").css("top",Math.min($("#primaryCover").height()/4,$("#primaryCover").height()+$("#sobreMBAContainer").height()-$("#aboutDappContainer").height()-$(this).scrollTop()));
 });
+
+// $(function() {
+//   $(window).scroll(function() {
+//     $('#grafo').css({
+//       'transform': 'rotateX(' + 30 * (1 + Math.PI * Math.atan($(document).scrollTop() / 300)) + 'deg)'
+//     });
+//   });
+// })

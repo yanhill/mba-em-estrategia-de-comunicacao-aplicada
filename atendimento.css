@@ -7,8 +7,7 @@ margin-right: 15px;
 line-height:1.1em;
 }
 .atendimento-whatsapp {
-    margin-bottom: 5vh;
-    padding: 10px 15px;
+    padding: 5px 15px;
     background-color: #023A78F5;
     border-radius: 200px;
     color: White;
@@ -22,12 +21,13 @@ line-height:1.1em;
 }
 
 .atendimento-whatsapp:hover{
-    color:orange;
-    fill:orange;
-    cursor:pointer;
+    background:orange;
+    color:#023A78F5;
+    
+        cursor:pointer;
 }
 .atendimento-whatsapp:hover > .ico{
-    fill:orange;
+    fill:#023A78F5;
 }
 
 .ico {

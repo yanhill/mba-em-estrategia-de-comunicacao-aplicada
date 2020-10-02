@@ -2,7 +2,7 @@
     min-height: 600px;
     display: grid;
     position: relative;
-    background-image: url('img/fgv-1.jpg');
+    background-image: url('img/otimizado/fgv-1.jpg');
     background-size: cover;
     background-position-y: bottom;
     
@@ -86,7 +86,7 @@
         padding:auto;
     }
     .about-dapp-container {
-        background-image: url('img/fgv-2.jpg');
+        background-image: url('img/otimizado/fgv-2.jpg');
         background-size: cover;
         background-position-y: bottom;
         grid-template-columns: 1fr auto;
