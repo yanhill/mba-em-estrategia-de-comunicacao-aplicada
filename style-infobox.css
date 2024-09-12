@@ -1,31 +1,44 @@
 .information-box{
-    background: white;
-    z-index: 0;
-    position: fixed;
+    z-index: 5;
+padding: 20px 20px 20px 20px;
+margin-left: 5vw;
+transform: translateY(200px);
+background: #FCFBF8;
+padding-top: 0;
+z-index: 5;
+    position: absolute;
     top: 30vh;
-    width: 340px;
-    border-radius: 2px;
-    z-index: 0;
-    padding: 10px 0;
-    right: 0;
-    margin-right: 2vw;
+    width: 300px;
 border: 1px solid #ccc;
+color: #424242;
 }
 
+.info-container > div:nth-child(1) {
+    display: flex;
+    gap: 3px;
+    }
+
+    div.inicio:nth-child(2) {
+        }
+        div.matriculas:nth-child(3) {
+
+        }
+        div.duracao:nth-child(3) {
+
+        }
+
+.tempo {
+
+    }
+    .datas {
+        }
 .carva-horaria{
     grid-area: carga;
 }
 .info-container{
-    margin-bottom: 30px;
-    gap: 15px 10px;
-    padding: 30px 0;
     font-family: 'Montserrat', sans-serif;
-    margin: 25px 35px;
-    border-top: 1px solid #eee;
-    color: #919191;
-    font-size: 0.85em;
-    font-weight: 500;
-    text-align:left;
+    font-size: 0.9em;
+    margin: 25px 0;
 }
 
 .inscreva-se {
@@ -33,19 +46,17 @@ border: 1px solid #ccc;
     display: block;
     text-decoration: none;
     padding: 20px;
-    letter-spacing: 0.1em;
     font-weight: 600;
-    color: #FE9000;
-    border: 1px solid #FE9000;
+    color: #ffffff;
+    background-color: #FE9000;
     border-radius: 2.5px;
-    margin: 0px 10px;
-    font-family:'gotham-book';
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.1em;
     font-size: 1em;
 }
 
     .inscreva-se:hover{
-        background:#FE9000;
+        background:#023A78F5;
         color:white;
     }
 
@@ -67,18 +78,17 @@ border: 1px solid #ccc;
 }
 
 .info-title{
-    font-weight: 700;
-    margin-bottom: 25px;
-    text-align: center;
-    font-size: 1.35em;
-    color: #008FD0;
+    color: #023A78;
+font-weight: 600;
+text-align: center;
+font-size: 1.2em;
     font-family: 'Montserrat', sans-serif;
 }
 
 .novo-curso-box{
     display: flex;
     justify-content: space-around;
-    margin: 25px 35px;
+    margin: 25px 25px;
 }
 
 .novo-curso-box .dapp-logo{
@@ -87,13 +97,11 @@ border: 1px solid #ccc;
     }
 
 .modalidade-container {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
     align-items: center;
+    margin-bottom: 10px;
 }
        
 div.modalidade:last-child {
-    text-align: right;
     /*! width: 100%; */
 }
 .icon-container{
@@ -101,13 +109,11 @@ div.modalidade:last-child {
     transform: translateY(1px);
 }    
 div.modalidade-container:nth-child(2) {
-    margin-top: 15px;
 }
 div.modalidade-container:nth-child(4) {
     margin-top: 15px;
 }
 div.modalidade-container:nth-child(3) {
-    margin-top: 5px;
 }
 div.modalidade-container:nth-child(5) {
     margin-top: 5px;
@@ -118,11 +124,15 @@ div.modalidade:nth-child(3) {
 
 @media only screen and (max-width: 1200px) {
     .information-box {
-        margin: 0px auto;
-        padding: 10px 0;
-        position:unset;
-        transform: translateY(-70px);
         z-index: 1;
+        padding: 20px 20px 20px 20px;
+position: absolute;
+left: 0;
+margin-left: 5vw;
+transform: translateY(250px);
+background: #FCFBF8;
+padding-top: 0;
+        
     }
 
         .novo-curso-box .dapp-logo {
@@ -141,7 +151,7 @@ div.modalidade:nth-child(3) {
 @media only screen and (max-width: 570px) {
     .information-box {
         position: static;
-        transform: translate(0);
+        transform: translateY(-70px);
 width: none;
 margin: 20px auto;
     }

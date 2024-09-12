@@ -3,20 +3,30 @@
     position: absolute;
     top: 30vh;
 }
+
+.novo-curso-fgv-live {
+    display: flex;
+    margin-bottom: 5px;
+    }
+
+.info-subtitle {
+    color: #FCFBF8;
+    font-family: 'Montserrat';
+    margin-top: 20px;
+    max-width: 300px;
+    }
 .wrap-capa{
     color:white;
     height:100vh;
     color:#fff;
-    font-size: 1.5vw;
     border-top: 20px;
     z-index: 2;
     position: relative;
     display:grid;
-    grid-template-columns: 1fr 1.25fr;
+    grid-template-columns: 1fr 1fr;
 }
 .wrap-tentativa {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    max-width: 50vw;
 }
 .wrap-capa> .part1{
     background-color:#023A78;
@@ -41,22 +51,17 @@
 .cover-title h1{
     line-height: 1.1em;
     font-family: 'montserrat';
-    text-transform: uppercase;
     margin:0;
-    letter-spacing:.05em;
-    font-size: 4.5vw;
     line-height: auto;
     color: white;
+    font-size: 3vw;
+max-width: 600;
 }
 .agora-a-fgvdapp{
-    font-size:.75em;
     font-family: 'montserrat';
-    letter-spacing: .05em;
-    margin-right: 150px;
 }
 .dapp{
     font-family: 'montserrat';
-font-weight: bold;
 }
 .header-content a{
     font-family: 'Source Sans Pro',sans-serif;
@@ -70,35 +75,35 @@ font-weight: bold;
 }
 .novo-curso-container{
     position: relative;
-    top: 17vh;
-    margin-left: 10vw;
+    top: 10vh;
+    margin-left: 5vw;
 }
 .fgv-live{
-    width: 15vw;
+    width: 70px;
+margin-left: 5px;
     position:relative;
-    top:-10px;
 }
 .black{
     font-family: 'gotham-black';
 }
 .cover-title {
     position: absolute;
-    margin-left: 10vw;
-    top: 35vh;
+    top: 20vh;
+    margin-left: 5vw;
     z-index: 5;
 }
-
+/*
 @media only screen and (max-width: 1366px) {
     .cover-title {
-        top: 35vh;
-        top: 40vh;
+        top: 30vh;
+        top: 20vh;
     }
     .wrap-tentativa h2 {
         font-size: 1.5em;
         padding: 10px;
         }
    }
-
+*/
 @media only screen and (max-width: 1200px) {
 
     a.primeiro:nth-child(1) {
@@ -108,7 +113,8 @@ font-weight: bold;
         fill: white;
     }
     .cover-title h1 {
-        font-size: 8vw;
+        font-size: 4vw;
+max-width: 500px;
     }
     .wrap-tentativa h2 {
         font-size: 3vw;
@@ -119,22 +125,19 @@ font-weight: bold;
     }
     .wrap-tentativa{
         display:block;
+        max-width: 50vw;
     }
     .wrap-capa > .part2{
         background-position-x: cover;
     }
     .agora-a-fgvdapp{
-        margin-top:10px;
-        font-size:1.5em;
         margin-right:0;
     }
     .wrap-capa{
         height: 100vh;
     }
     .cover-title {
-        font-size: 6vw;
-        top: 33vh;
-        margin: 0 10vw;
+        top: 20vh;
     }
     .header-content {
         position: absolute;
@@ -146,8 +149,6 @@ font-weight: bold;
         width: 60%;
     }
     .fgv-live{
-        width: 29vw;
-        height: auto;
     }
     .background-color {
         background: #00000047;
@@ -168,16 +169,22 @@ font-weight: bold;
         position: relative;
     }
     .novo-curso-container{
-        top: 15vh;
-        margin-right: 20px;
+        top: 10vh;
+        font-size: 0.9em;
     }
 }
 
 @media only screen and (max-width: 570px) {
+    .novo-curso-fgv-live {
+        display: flex;
+        justify-content: safe center;
+        margin-bottom: 5px;
+        }
 
     .cover-title h1 {
         line-height: 1.1em;
         font-size: 8vw;
+        color: #FFFFFFF5;
         margin-bottom: 10px;
     }
     .wrap-capa {
@@ -196,9 +203,14 @@ font-weight: bold;
         background-position-y: inherit;
     }
     .cover-title {
-        top: 45vh;
-        font-size: 8.5vw;
-        width:90%;
+width: 100%;
+margin: 0;
+display: block;
+padding-top: 20px;
+padding-left: 20px;
+top: 60vh;
+height: 40vh;
+background: #023A78;
     }
     .siga-nos {
         display: none;
@@ -215,11 +227,8 @@ font-weight: bold;
         padding: 10px 0;
     }
     .wrap-tentativa {
-        display: block;
-        border-left: 1px solid #76aae1;
-        padding-left: 5px;
-        background: #023A7870;
-        margin-right: 10vw;
+        margin-top: 10px;
+        max-width: none;
     }
     .wrap-tentativa h2 {
         background-color:none;
@@ -234,16 +243,13 @@ font-weight: bold;
         border:none;
     }
     .fgv-live{
-        width: 55vw;
-        display: flex;
-        top: -20px;
+top: 0;
     }
     .novo-curso-container{
         top: 10vh;
         margin: 0 15vw;
     }
     .agora-a-fgvdapp {
-        font-size: 2.5em;
         text-align: center;
         margin-right:0;
     }

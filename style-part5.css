@@ -3,36 +3,46 @@
     src: url('font/gotham/GothamMedium_0.ttf');
 }
 
+.label{
+    font-size: 1em;
+}
+
+.label-processores {
+    }
+    .gallery .nome {
+    margin-left: 0;
+    }
+
 .wrap-marco > figure:nth-child(1) {
     border: none;
     border-bottom: solid 1px #ccc;
    }
+   .gallery .bio {
+    margin-top: 0;
+    }
 
    .tops {
-    margin: 0 20vw;
     }
 
     .nome-inferior {
         display: none;
         }
         .nome-superior {
-        font-size: 1.4em;
         font-family: 'montserrat';
         font-weight: 700;
         color: #3A80CE;
         }
 
         .gallery .about {
-            margin: 10px;
+            margin-right: 15px;
+            margin-left: 0;
             }
 .corpo-docente-container h1 {
-    text-align: center;
     font-family: 'montserrat';
-    font-size: 1em;
 font-weight: 400;
 letter-spacing:0.1em;
 color: #555;
-margin: 100px 0;
+
 }
 .corpo-docente-container > .bio{
  border-bottom:1px solid #ccc;
@@ -42,13 +52,8 @@ figure {
     margin: 0px;
 }
 .bio{
-    text-align: left;
-    font-size: 1.4em;
     font-family: 'montserrat';
-    font-weight: 700;
-    color: #3A80CE;
     margin-top:10px;
-    max-width: 250px;
 }
 .bio-top{
     max-width:none;
@@ -60,25 +65,26 @@ figure {
     gap: 70px;
     }
 
+.galery .nome{
+    margin-left: 0;
+}
+
 .about{
-    font-size: 0.7em;
-    font-family: 'Source Sans Pro',sans-serif;
-    font-weight: 300;
-    color:#555;
+color: #424242;
+max-width: 250px;
+line-height: 1.4em;
 }
 .gallery .about{
-    max-width: 300px;
 }
 .corpo-docente-container {
-    margin-top: 10vw;
+    margin: 5vw 15vw;
+    font-size: 0.8em;
    } 
 
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 0 15vw;
-justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
 }
 .gallery h1 {
     font-size: 3em;
@@ -89,12 +95,12 @@ justify-items: center;
 }
 
 .gallery__item{
-    border-left: 1px solid #999;
+    border-left: none;
     margin: 30px 0px;
 }
 .gallery__img {
-    height: 250px;
-    width:250px;
+    height: 200px;
+    width: 180px;
     margin-bottom: none;
     object-fit: cover;
     object-position: top; 
@@ -102,18 +108,20 @@ justify-items: center;
 .nome, .about{
     margin-left: 10px;
 }
+.nome{
+    font-weight: 500;
+    font-size: 1.2em;
+}
 
 .wrap-marco .nome {
-    font-size: 1.5em;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .wrap-marco .about {
-    font-size: 1em;
 }
 
     .wrap-marco > .gallery__item {
         display: grid;
-grid-template-columns: 1fr auto;
+grid-template-columns: auto 1fr ;
         }
 
         .img-top{
@@ -121,26 +129,57 @@ grid-template-columns: 1fr auto;
         }
 
         div.wrap-marco:nth-child(1) > figure:nth-child(2) {
-            border-bottom: solid 1px #ccc;
             border-left: none;
             }
 
             .coordenacao > div:nth-child(2) > figure:nth-child(2) {
-                border-bottom: solid 1px #ccc;
                 border-left: none;
                 }
 
                 .coordenacao .bio {
-                    font-size: 1.25em;
                     }
                     .coordenacao .nome {
-                    font-size: 1.3em;
                     }
 
 @media only screen and (max-width: 1200px) {
+
+    .label-processores{
+    }
+.corpo-docente-container h1{
+    text-align: left;
+    margin-top: 4vh;
+}
+.nome, .about{
+    margin-left:0;
+}
+.label-professores {
+    margin: auto 10vw;
+    }
+
+.marco1 .bio{
+    margin-left:10px;
+}
+
+.gallery .about {
+    line-height: 1.4em;
+    }
+
     .gallery {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+    }
+    .coordenacao .bio{
+        margin-top: 5px;
+    }
+
+    .coordenacao .nome{
+        margin-left: 0;
+    }
+    .coordenacao .about{
+        margin-left: 0;
+    }
+    .coordenacao .gallery__item{
+        display:block;
     }
 
     .wrap-marco > .gallery__item {
@@ -150,11 +189,9 @@ grid-template-columns: 1fr auto;
         width: auto;
     }
     .gallery__img{
-        width: 25vw;
     }
     .bio{
-        font-size: 1.2em;
-
+        margin-top: 0px;
     }  
     .part6-container {
         margin-left: 0;
@@ -165,12 +202,12 @@ grid-template-columns: 1fr auto;
     }
     
 .gallery__item{
-    margin: 50px auto;
+    margin: 20px auto;
     min-width:auto;
+    border: none;
 }
 .tops {
     width: auto;
-    margin: auto 10vw;
     }
     #Layer_1 > path{
         fill: white;
@@ -183,18 +220,17 @@ grid-template-columns: 1fr auto;
 
 @media only screen and (max-width: 570px) {
 
+    .gallery .bio {
+        margin-top: 10px;
+        }
+
+    .marco1 .bio{
+        margin-left:0;
+    }
     .coordenacao{
         display:block;
     }
     .about::before {
-        content: "";
-        position: absolute;
-        width: 15px;
-        height: 1px;
-        background-color: #6FAEFF;
-        transform: translate(-20px, 8px);
-z-index: -1;
-border-radius: 1px;
     }
     .nome-superior {
         display: none;
@@ -214,7 +250,6 @@ border-radius: 1px;
     }
     
     .gallery .about {
-        margin: 5px 20px;
         }
     .corpo-docente-container {
         margin: 0;
@@ -225,34 +260,35 @@ border-radius: 1px;
         display:flex;
     }
     .gallery__img{
-        height: 200px;
+        height: 180px;
         width:35vw;
         
     }
     .about{
-        margin-left: 10px;
-        font-size: .8em;
         margin-right: 8vw;
     }
     .bio{
-        margin-top: 25px;
+        margin-top: 10px;
         user-select: none;
         border-bottom: 1px solid #BDBDBDC4;
+        padding-left: 10px;
+    }
+
+    .coordenacao .gallery__item{
+        display:grid;
     }
     .wrap-marco .nome {
-        font-size: 1em;
     }
     .wrap-marco .about {
-        font-size: .8em;
     }
     .nome{
-        margin-bottom: 15px;
-        font-size: 1em;
     }
     .corpo-docente-container h1 {
 color: #555;
 font-size: 1em;
-margin: 70px 0;
+margin-bottom: 40px;
+margin-top: 80px;
+margin-left: 10px;
     }
     figure.gallery__item:nth-child(18) > div:nth-child(2) {
         border-bottom:none;
